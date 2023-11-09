@@ -1,7 +1,8 @@
+/* eslint-disable react-refresh/only-export-components */
 /* eslint-disable react/no-unknown-property */
-import React from 'react';
 import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
+import PropTypes from 'prop-types';
 
 import { styles } from '../styles';
 import { services } from '../constants';
@@ -31,6 +32,12 @@ const ServiceCard = ({ index, title, icon }) => {
       </motion.div>
     </Tilt>
   );
+};
+
+ServiceCard.propTypes = {
+  index: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired,
 };
 
 const About = () => {
