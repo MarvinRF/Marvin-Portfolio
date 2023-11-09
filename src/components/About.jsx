@@ -1,9 +1,60 @@
-import React from 'react'
+/* eslint-disable react/no-unknown-property */
+import React from 'react';
+import { Tilt } from 'react-tilt';
+import { motion } from 'framer-motion';
+
+import { styles } from '../styles';
+import { services } from '../constants';
+import { fadeIn, textVariant } from '../utils/motion';
+import { SectionWrapper } from '../hoc';
+
+const ServiceCard = ({ index, title, icon }) => {
+  return (
+    <Tilt className="w-full xs:w-[250px]">
+      <motion.div
+        variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}
+        className="green-pink-gradient w-full rounded-[20px] p-[1px] shadow-card"
+      >
+        <div
+          options={{
+            max: 45,
+            scale: 1,
+            speed: 450,
+          }}
+          className="flex min-h-[280px] flex-col items-center justify-evenly rounded-[20px] bg-tertiary px-12 py-5"
+        >
+          <img src={icon} alt={title} className="h-16 w-16 object-contain" />
+          <h3 className="text-center text-[20px] font-bold text-white">
+            {title}
+          </h3>
+        </div>
+      </motion.div>
+    </Tilt>
+  );
+};
 
 const About = () => {
   return (
-    <div>About</div>
-  )
-}
+    <>
+      <motion.div variants={textVariant()}>
+        <p className={styles.sectionSubText}>Introduction</p>
+        <h2 className={styles.sectionHeadText}>Overview.</h2>
+      </motion.div>
+      <motion.p
+        variants={fadeIn('', '', 0.1, 1)}
+        className="mt-4 max-w-3xl text-[17px] leading-[30px] text-secondary"
+      >
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia laborum
+        temporibus obcaecati eaque sit sunt excepturi ipsum minus voluptate quae
+        veritatis fugiat, minima, et consequatur odio harum eius nobis vero
+      </motion.p>
+      <div className="mt-20 flex flex-wrap gap-10">
+        {services.map((service, index) => (
+          <ServiceCard key={service.title} index={index} {...service} />
+        ))}
+      </div>
+    </>
+  );
+};
 
-export default About
+export default SectionWrapper(About, 'about');
