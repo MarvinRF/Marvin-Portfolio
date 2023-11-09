@@ -10,11 +10,11 @@ import {
   reactjs,
   redux,
   tailwind,
-  nodejs,
-  mongodb,
+  postgre,
+  java,
   git,
   figma,
-  docker,
+  vue,
   valenca,
   bahia,
   telus,
@@ -89,12 +89,12 @@ const technologies = [
     icon: tailwind,
   },
   {
-    name: 'Node JS',
-    icon: nodejs,
+    name: 'Vue',
+    icon: vue,
   },
   {
-    name: 'MongoDB',
-    icon: mongodb,
+    name: 'Postgre',
+    icon: postgre,
   },
   {
     name: 'Three JS',
@@ -109,8 +109,8 @@ const technologies = [
     icon: figma,
   },
   {
-    name: 'docker',
-    icon: docker,
+    name: 'Java',
+    icon: java,
   },
 ];
 
