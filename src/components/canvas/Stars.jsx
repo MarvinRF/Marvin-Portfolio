@@ -15,7 +15,7 @@ const Stars = (props) => {
     ref.current.rotation.y -= delta / 15;
   });
 
-  return (
+  return (ç
     <group rotation={[0, 0, Math.PI / 4]}>
       <Points ref={ref} positions={sphere} stride={3} frustumCulled {...props}>
         <PointMaterial

@@ -153,6 +153,8 @@ const contact = {
   camp_message_placeholder: 'O que tem a dizer?',
   button_sending: 'Enviando...',
   button_send: 'Enviar',
+  alert: 'Obrigado, eu entrarei em contato com você assim que puder!',
+  alert_error: 'Algo deu errado!',
 };
 
 const experiences = [
