@@ -1,4 +1,6 @@
-import React, { Suspense } from 'react';
+/* eslint-disable react/no-unknown-property */
+import { Suspense } from 'react';
+import PropTypes from 'prop-types';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 
@@ -10,6 +12,12 @@ const Earth = () => {
   return (
     <primitive object={earth.scene} scale={2.5} position-y={0} rotation-y={0} />
   );
+};
+
+Earth.propTypes = {
+  scale: PropTypes.number,
+  positionY: PropTypes.number,
+  rotationY: PropTypes.number,
 };
 
 const EarthCanvas = () => {
