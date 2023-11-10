@@ -14,6 +14,8 @@ import {
   java,
   git,
   figma,
+  sass,
+  bootstrap,
   vue,
   valenca,
   bahia,
@@ -69,12 +71,24 @@ const technologies = [
     icon: css,
   },
   {
+    name: 'SASS',
+    icon: sass,
+  },
+  {
+    name: 'Bootstrap',
+    icon: bootstrap,
+  },
+  {
     name: 'JavaScript',
     icon: javascript,
   },
   {
     name: 'TypeScript',
     icon: typescript,
+  },
+  {
+    name: 'Vue',
+    icon: vue,
   },
   {
     name: 'React JS',
@@ -89,14 +103,6 @@ const technologies = [
     icon: tailwind,
   },
   {
-    name: 'Vue',
-    icon: vue,
-  },
-  {
-    name: 'Postgre',
-    icon: postgre,
-  },
-  {
     name: 'Three JS',
     icon: threejs,
   },
@@ -109,10 +115,45 @@ const technologies = [
     icon: figma,
   },
   {
+    name: 'Postgre',
+    icon: postgre,
+  },
+  {
     name: 'Java',
     icon: java,
   },
 ];
+
+const inicio = {
+  title: 'Oi, eu sou o ',
+  span: 'Marvin',
+  text: 'Sou Desenvolvedor Front-End',
+  text2: 'Especializado na criação de sites modernos e responsivos.',
+};
+
+const about = {
+  text: 'Introdução',
+  title: 'Visão Geral.',
+  description:
+    'Desde que comecei a programar em 2017, fui aprendendo e crescendo e apanhando.',
+};
+
+const works = {
+  text: 'Meu trabalho',
+  title: 'Projetos.',
+  description:
+    'Desde que comecei a programar em 2017, fui aprendendo e crescendo e apanhando.',
+};
+
+const feedback = {
+  text: 'O que outros tem a dizer',
+  title: 'Feedback.',
+};
+
+const experience = {
+  text: 'O que eu ja fiz até aqui',
+  title: 'Experiência de Trabalho.',
+};
 
 const experiences = [
   {
@@ -260,4 +301,15 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export {
+  services,
+  technologies,
+  experiences,
+  experience,
+  inicio,
+  about,
+  works,
+  feedback,
+  testimonials,
+  projects,
+};

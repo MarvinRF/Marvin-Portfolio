@@ -4,10 +4,13 @@ import creator from './creator.png';
 import mobile from './mobile.png';
 import web from './web.png';
 import github from './github.png';
+import vercel from './vercel.png';
 import menu from './menu.svg';
 import close from './close.svg';
 
 import css from './tech/css.png';
+import sass from './tech/sass.png';
+import bootstrap from './tech/bootstrap.png';
 import java from './tech/java.png';
 import figma from './tech/figma.png';
 import git from './tech/git.png';
@@ -37,9 +40,12 @@ export {
   mobile,
   web,
   github,
+  vercel,
   menu,
   close,
   css,
+  sass,
+  bootstrap,
   java,
   figma,
   git,

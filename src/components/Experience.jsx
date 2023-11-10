@@ -8,14 +8,14 @@ import { motion } from 'framer-motion';
 import 'react-vertical-timeline-component/style.min.css';
 
 import { styles } from '../styles';
-import { experiences } from '../constants';
+import { experiences, experience } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { textVariant } from '../utils/motion';
 
 const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
-      contentStyle={{ background: '#1d1836', color: '#fff' }}
+      contentStyle={{ background: '#00263b', color: '#fff' }}
       contentArrowStyle={{ borderRight: '7px solid #232631' }}
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
@@ -67,8 +67,8 @@ const Experience = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>What i have done so far</p>
-        <h2 className={styles.sectionHeadText}>Work Experience.</h2>
+        <p className={styles.sectionSubText}>{experience.text}</p>
+        <h2 className={styles.sectionHeadText}>{experience.title}</h2>
       </motion.div>
 
       <div className="mt-20 flex flex-col">

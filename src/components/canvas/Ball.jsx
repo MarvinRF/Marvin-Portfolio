@@ -1,7 +1,7 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unknown-property */
-import React, { Suspense } from 'react';
+import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
+import PropTypes from 'prop-types';
 import {
   Decal,
   Float,
@@ -17,12 +17,12 @@ const Ball = (props) => {
 
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
-      <ambientLight intensity={0.25} />
+      <ambientLight intensity={0.9} />
       <directionalLight position={[0, 0, 0.05]} />
       <mesh castShadow receiveShadow scale={2.75}>
         <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial
-          color="#91afff"
+          color="#fff8eb"
           polygonOffset
           polygonOffsetFactor={-5}
           flatShading
@@ -37,6 +37,10 @@ const Ball = (props) => {
       </mesh>
     </Float>
   );
+};
+
+Ball.propTypes = {
+  imgUrl: PropTypes.string.isRequired,
 };
 
 const BallCanvas = ({ icon }) => {
@@ -54,6 +58,10 @@ const BallCanvas = ({ icon }) => {
       <Preload all />
     </Canvas>
   );
+};
+
+BallCanvas.propTypes = {
+  icon: PropTypes.string.isRequired,
 };
 
 export default BallCanvas;

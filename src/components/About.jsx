@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import PropTypes from 'prop-types';
 
 import { styles } from '../styles';
-import { services } from '../constants';
+import { services, about } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 
@@ -44,16 +44,14 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <p className={styles.sectionSubText}>{about.text}</p>
+        <h2 className={styles.sectionHeadText}>{about.title}</h2>
       </motion.div>
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 max-w-3xl text-[17px] leading-[30px] text-secondary"
       >
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia laborum
-        temporibus obcaecati eaque sit sunt excepturi ipsum minus voluptate quae
-        veritatis fugiat, minima, et consequatur odio harum eius nobis vero
+        {about.description}
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
