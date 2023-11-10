@@ -29,11 +29,14 @@ import bahia from './company/bahia.png';
 import innovats from './company/innovats.png';
 import telus from './company/telus.png';
 
-import carrent from './carrent.png';
-import jobit from './jobit.png';
-import tripguide from './tripguide.png';
+import todo from './todo.png';
+import onepiece from './onepiece.png';
+import disney from './disney.png';
+
+import manoel from './manoel.png';
 
 export {
+  manoel,
   logo,
   backend,
   creator,
@@ -62,7 +65,7 @@ export {
   bahia,
   innovats,
   telus,
-  carrent,
-  jobit,
-  tripguide,
+  todo,
+  onepiece,
+  disney,
 };

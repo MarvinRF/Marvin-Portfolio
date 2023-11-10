@@ -3,6 +3,7 @@ import { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 
+import { contact } from '../constants';
 import { styles } from '../styles';
 import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
@@ -73,8 +74,8 @@ const Contact = () => {
         variants={slideIn('left', 'tween', 0.2, 1)}
         className="flex-[0.75] rounded-2xl bg-black-100 p-8"
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <p className={styles.sectionSubText}>{contact.text}</p>
+        <h3 className={styles.sectionHeadText}>{contact.title}</h3>
 
         <form
           ref={formRef}
@@ -82,35 +83,41 @@ const Contact = () => {
           className="mt-12 flex flex-col gap-8"
         >
           <label className="flex flex-col">
-            <span className="mb-4 font-medium text-white">Your Name</span>
+            <span className="mb-4 font-medium text-white">
+              {contact.camp_name}
+            </span>
             <input
               type="text"
               name="name"
               value={form.name}
               onChange={handleChange}
-              placeholder="What's your good name?"
+              placeholder={contact.camp_name_placeholder}
               className="rounded-lg border-none bg-tertiary px-6 py-4 font-medium text-white outline-none placeholder:text-secondary"
             />
           </label>
           <label className="flex flex-col">
-            <span className="mb-4 font-medium text-white">Your email</span>
+            <span className="mb-4 font-medium text-white">
+              {contact.camp_email}
+            </span>
             <input
               type="email"
               name="email"
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your web address?"
+              placeholder={contact.camp_email_placeholder}
               className="rounded-lg border-none bg-tertiary px-6 py-4 font-medium text-white outline-none placeholder:text-secondary"
             />
           </label>
           <label className="flex flex-col">
-            <span className="mb-4 font-medium text-white">Your Message</span>
+            <span className="mb-4 font-medium text-white">
+              {contact.camp_message}
+            </span>
             <textarea
               rows={7}
               name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder="What you want to say?"
+              placeholder={contact.camp_message_placeholder}
               className="rounded-lg border-none bg-tertiary px-6 py-4 font-medium text-white outline-none placeholder:text-secondary"
             />
           </label>
@@ -119,7 +126,7 @@ const Contact = () => {
             type="submit"
             className="w-fit rounded-xl bg-tertiary px-8 py-3 font-bold text-white shadow-md shadow-primary outline-none"
           >
-            {loading ? 'Sending...' : 'Send'}
+            {loading ? `${contact.button_sending}` : `${contact.button_send}`}
           </button>
         </form>
       </motion.div>

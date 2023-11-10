@@ -31,7 +31,7 @@ const FeedbackCard = ({
               <span className="blue-text-gradient">@</span> {name}
             </p>
             <p className="mt-1 text-[12px] text-secondary">
-              {designation} of {company}
+              {designation} {feedback.noun} {company}
             </p>
           </div>
 

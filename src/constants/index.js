@@ -12,18 +12,16 @@ import {
   tailwind,
   postgre,
   java,
-  git,
-  figma,
-  sass,
   bootstrap,
   vue,
   valenca,
   bahia,
   telus,
   innovats,
-  carrent,
-  jobit,
-  tripguide,
+  todo,
+  onepiece,
+  manoel,
+  disney,
   threejs,
 } from '../assets';
 
@@ -71,10 +69,6 @@ const technologies = [
     icon: css,
   },
   {
-    name: 'SASS',
-    icon: sass,
-  },
-  {
     name: 'Bootstrap',
     icon: bootstrap,
   },
@@ -105,14 +99,6 @@ const technologies = [
   {
     name: 'Three JS',
     icon: threejs,
-  },
-  {
-    name: 'git',
-    icon: git,
-  },
-  {
-    name: 'figma',
-    icon: figma,
   },
   {
     name: 'Postgre',
@@ -148,11 +134,25 @@ const works = {
 const feedback = {
   text: 'O que outros tem a dizer',
   title: 'Feedback.',
+  noun: 'em',
 };
 
 const experience = {
   text: 'O que eu ja fiz até aqui',
   title: 'Experiência de Trabalho.',
+};
+
+const contact = {
+  text: 'Entre em Contato',
+  title: 'Contato.',
+  camp_name: 'Seu Nome',
+  camp_name_placeholder: 'Como se chama?',
+  camp_email: 'Seu E-mail',
+  camp_email_placeholder: 'Digite o seu E-mail',
+  camp_message: 'Sua Mensagem',
+  camp_message_placeholder: 'O que tem a dizer?',
+  button_sending: 'Enviando...',
+  button_send: 'Enviar',
 };
 
 const experiences = [
@@ -211,18 +211,18 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
-    name: 'Sara Lee',
-    designation: 'CFO',
-    company: 'Acme Co',
-    image: 'https://randomuser.me/api/portraits/women/4.jpg',
+      'Com a colaboração crucial de Marvin, a implementação do sistema de educação tornou-se uma empreitada de sucesso.',
+    name: 'Manoel Soares',
+    designation: 'Diretor de tecnologia',
+    company: 'Prefeitura Municipal de Valença.',
+    image: manoel,
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: 'Chris Brown',
-    designation: 'COO',
-    company: 'DEF Corp',
+      'Marvin brilha nas aulas de web! Nota 10 em dedicação e habilidades, muito competitivo. Excelente desempenho!',
+    name: 'Adson Araujo',
+    designation: 'Professor',
+    company: 'IFBA',
     image: 'https://randomuser.me/api/portraits/men/5.jpg',
   },
   {
@@ -237,67 +237,66 @@ const testimonials = [
 
 const projects = [
   {
-    name: 'Car Rent',
+    name: 'Lista de Tarefas',
     description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+      'Lista de Tarefas responsiva, construída com React.js, e hospedada na Vercel. Este projeto combina tecnologia de ponta com facilidade de uso, proporcionando uma experiência de gerenciamento de tarefas eficiente e intuitiva.',
     tags: [
       {
-        name: 'react',
+        name: 'React',
         color: 'blue-text-gradient',
       },
       {
-        name: 'mongodb',
+        name: 'vite',
         color: 'green-text-gradient',
       },
-      {
-        name: 'tailwind',
-        color: 'pink-text-gradient',
-      },
     ],
-    image: carrent,
-    source_code_link: 'https://github.com/',
+    image: todo,
+    source_code_link: 'https://github.com/MarvinRF/todo-react',
+    vercel_code_link: 'https://todo-react-one-red.vercel.app/',
   },
   {
-    name: 'Job IT',
+    name: 'Netflix One-Piece',
     description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+      'Construí a presente página com a intenção de trazer uma cara nova para a página da série live-action de One Piece, modifiquei muita coisa que não gostava do site original da Netflix. Dei uma enxugada em alguns conteúdos e adicionei outros.',
     tags: [
       {
-        name: 'react',
+        name: 'gulp',
         color: 'blue-text-gradient',
       },
       {
-        name: 'restapi',
+        name: 'sass',
         color: 'green-text-gradient',
       },
       {
-        name: 'scss',
+        name: 'javaScript',
         color: 'pink-text-gradient',
       },
     ],
-    image: jobit,
-    source_code_link: 'https://github.com/',
+    image: onepiece,
+    source_code_link: 'https://github.com/MarvinRF/One_Piece-Marvin_Rocha',
+    vercel_code_link: 'https://one-piece-marvin-rocha.vercel.app/',
   },
   {
-    name: 'Trip Guide',
+    name: 'Disney+ Clone',
     description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+      'Construí esta página durante o módulo 21 do curso Profissão: Engenheiro Front-end v2 da EBAC - Escola Britânica de Artes Criativas e Tecnologia. Destaco a utilização do SASS com metodologia (BEM) Block Element Modifier.',
     tags: [
       {
-        name: 'nextjs',
+        name: 'gulp',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'sass',
         color: 'green-text-gradient',
       },
       {
-        name: 'css',
+        name: 'JavaScript',
         color: 'pink-text-gradient',
       },
     ],
-    image: tripguide,
-    source_code_link: 'https://github.com/',
+    image: disney,
+    source_code_link: 'https://github.com/MarvinRF/Clone_DisneyPlus',
+    vercel_code_link: 'https://clone-disney-plus-jcxk.vercel.app/',
   },
 ];
 
@@ -307,6 +306,7 @@ export {
   experiences,
   experience,
   inicio,
+  contact,
   about,
   works,
   feedback,

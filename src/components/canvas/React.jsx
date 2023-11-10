@@ -10,21 +10,13 @@ const React = ({ isMobile }) => {
 
   return (
     <mesh>
-      <hemisphereLight intensity={3} groundColor="black" />
-      <spotLight
-        position={[20, 40, 10]}
-        angle={0.12}
-        penumbra={1}
-        intensity={1}
-        castShadow
-        shadow-mapSize={1024}
-      />
-      <pointLight intensity={5} />
+      <hemisphereLight intensity={4} groundColor="black" />
+
       <primitive
         object={react_logo.scene}
-        scale={isMobile ? 0.9 : 1.3}
-        position={isMobile ? [0, -1.5, -2.2] : [0, -1.3, 1.5]}
-        rotation={[2 * Math.PI, 0, 6.25]}
+        scale={isMobile ? 0.9 : 1.1}
+        position-y={isMobile ? -1.2 : -1.4}
+        rotation-y={0}
       />
     </mesh>
   );
@@ -54,7 +46,12 @@ const ReactLogo = () => {
       frameloop="demand"
       shadows
       dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: 25 }}
+      camera={{
+        fov: 55,
+        near: 0.1,
+        far: 200,
+        position: [-4, 3, 6],
+      }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>

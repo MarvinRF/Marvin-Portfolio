@@ -17,6 +17,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  vercel_code_link,
 }) => {
   return (
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
@@ -36,7 +37,7 @@ const ProjectCard = ({
           />
           <div className="card-img_hover absolute inset-0 m-3 flex justify-end">
             <div
-              onClick={() => window.open(source_code_link, '_blank')}
+              onClick={() => window.open(vercel_code_link, '_blank')}
               className="black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full"
             >
               <img
@@ -85,6 +86,7 @@ ProjectCard.propTypes = {
   ),
   image: PropTypes.string,
   source_code_link: PropTypes.string,
+  vercel_code_link: PropTypes.string,
 };
 
 const Works = () => {
