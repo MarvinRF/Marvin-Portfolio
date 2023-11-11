@@ -20,7 +20,7 @@ const Hero = () => {
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             {initial.text} <br className="hidden sm:block" />
-            {initial.text2}
+            <span className="hidden sm:block">{initial.text2}</span>
           </p>
         </div>
       </div>
