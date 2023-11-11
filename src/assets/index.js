@@ -9,11 +9,8 @@ import menu from './menu.svg';
 import close from './close.svg';
 
 import css from './tech/css.png';
-import sass from './tech/sass.png';
 import bootstrap from './tech/bootstrap.png';
 import java from './tech/java.png';
-import figma from './tech/figma.png';
-import git from './tech/git.png';
 import html from './tech/html.png';
 import javascript from './tech/javascript.png';
 import vue from './tech/vue.png';
@@ -50,11 +47,8 @@ export {
   menu,
   close,
   css,
-  sass,
   bootstrap,
   java,
-  figma,
-  git,
   html,
   javascript,
   postgre,
