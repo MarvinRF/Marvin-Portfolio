@@ -230,7 +230,8 @@ const testimonials = [
     image: addson,
   },
   {
-    testimonial: 'aguardando...',
+    testimonial:
+      'Seu trabalho inovador e dedicação são incomparáveis, atuou em diversos projetos como fullstack!.',
     name: 'Victor Calazans',
     designation: 'CEO',
     company: 'Innovats',
