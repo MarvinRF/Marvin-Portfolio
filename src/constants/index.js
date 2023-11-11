@@ -21,6 +21,8 @@ import {
   todo,
   onepiece,
   manoel,
+  victor,
+  addson,
   disney,
   threejs,
 } from '../assets';
@@ -110,7 +112,7 @@ const technologies = [
   },
 ];
 
-const inicio = {
+const initial = {
   title: 'Oi, eu sou o ',
   span: 'Marvin',
   text: 'Sou Desenvolvedor Front-End',
@@ -121,14 +123,14 @@ const about = {
   text: 'Introdução',
   title: 'Visão Geral.',
   description:
-    'Desde que comecei a programar em 2017, fui aprendendo e crescendo e apanhando.',
+    'Sou um desenvolvedor de front-end especializado em React.js, apaixonado por criar e implementar interfaces de usuário de forma funcional e visualmente atraente. Com uma sólida experiência em tecnologias como Redux, Vue, tailwind, Bootstrap, JavaScript, Gulp, SASS e CSS, estou constantemente buscando aprimorar minhas habilidades para estar sempre atualizado com as tendências do mercado..',
 };
 
 const works = {
   text: 'Meu trabalho',
   title: 'Projetos.',
   description:
-    'Desde que comecei a programar em 2017, fui aprendendo e crescendo e apanhando.',
+    'Como profissional, estou sempre buscando desafios empolgantes que me permitam crescer profissionalmente e contribuir positivamente para a equipe. Aqui estão alguns dos meus ultimos projetos.',
 };
 
 const feedback = {
@@ -221,19 +223,18 @@ const testimonials = [
   },
   {
     testimonial:
-      'Marvin brilha nas aulas de web! Nota 10 em dedicação e habilidades, muito competitivo. Excelente desempenho!',
-    name: 'Adson Araujo',
+      'Marvin brilha nas aulas de web! muito dedicado e habilidoso, extremamente competitivo. sempre com ótimas entregas!',
+    name: 'Addson Araujo',
     designation: 'Professor',
     company: 'IFBA',
-    image: 'https://randomuser.me/api/portraits/men/5.jpg',
+    image: addson,
   },
   {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: 'Lisa Wang',
-    designation: 'CTO',
-    company: '456 Enterprises',
-    image: 'https://randomuser.me/api/portraits/women/6.jpg',
+    testimonial: 'aguardando...',
+    name: 'Victor Calazans',
+    designation: 'CEO',
+    company: 'Innovats',
+    image: victor,
   },
 ];
 
@@ -307,7 +308,7 @@ export {
   technologies,
   experiences,
   experience,
-  inicio,
+  initial,
   contact,
   about,
   works,

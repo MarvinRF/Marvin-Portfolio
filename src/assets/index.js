@@ -34,9 +34,12 @@ import onepiece from './onepiece.png';
 import disney from './disney.png';
 
 import manoel from './manoel.png';
-
+import addson from './addson.png';
+import victor from './victor.png';
 export {
   manoel,
+  victor,
+  addson,
   logo,
   backend,
   creator,

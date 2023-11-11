@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { inicio } from '../constants';
+import { initial } from '../constants';
 import { styles } from '../styles';
 import { ReactCanvas } from './canvas';
 
@@ -15,12 +15,12 @@ const Hero = () => {
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            {inicio.title}
-            <span className="text-[#03fefd]">{inicio.span}</span>
+            {initial.title}
+            <span className="text-[#03fefd]">{initial.span}</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            {inicio.text} <br className="hidden sm:block" />
-            {inicio.text2}
+            {initial.text} <br className="hidden sm:block" />
+            {initial.text2}
           </p>
         </div>
       </div>
