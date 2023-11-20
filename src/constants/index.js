@@ -21,6 +21,7 @@ import {
   todo,
   onepiece,
   manoel,
+  minhafoto,
   victor,
   addson,
   disney,
@@ -122,6 +123,7 @@ const initial = {
 const about = {
   text: 'Introdução',
   title: 'Visão Geral.',
+  foto: minhafoto,
   description:
     'Sou um desenvolvedor de front-end especializado em React.js, apaixonado por criar e implementar interfaces de usuário de forma funcional e visualmente atraente. Com uma sólida experiência em tecnologias como Redux, Vue, tailwind, Bootstrap, JavaScript, Gulp, SASS e CSS, estou constantemente buscando aprimorar minhas habilidades para estar sempre atualizado com as tendências do mercado..',
 };

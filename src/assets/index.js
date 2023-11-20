@@ -33,8 +33,10 @@ import disney from './disney.png';
 import manoel from './manoel.png';
 import addson from './addson.png';
 import victor from './victor.png';
+import minhafoto from './minhafoto.png';
 export {
   manoel,
+  minhafoto,
   victor,
   addson,
   logo,

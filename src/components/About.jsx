@@ -4,10 +4,12 @@ import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 import PropTypes from 'prop-types';
 
+import { useState, useEffect } from 'react';
 import { styles } from '../styles';
 import { services, about } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
+import { minhafoto } from '../assets';
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -41,11 +43,29 @@ ServiceCard.propTypes = {
 };
 
 const About = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    window.addEventListener('resize', handleResize);
+    handleResize();
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>{about.text}</p>
         <h2 className={styles.sectionHeadText}>{about.title}</h2>
+        <img
+          src={minhafoto}
+          alt="minha_foto"
+          className={`${isMobile ? 'relative' : 'absolute end-12 top-12'}`}
+        />
       </motion.div>
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
