@@ -47,7 +47,7 @@ const About = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 1155);
     };
     window.addEventListener('resize', handleResize);
     handleResize();
@@ -64,7 +64,7 @@ const About = () => {
         <img
           src={minhafoto}
           alt="minha_foto"
-          className={`${isMobile ? 'relative' : 'absolute end-12 top-12'}`}
+          className={`${isMobile ? 'block' : 'absolute end-12 top-12'}`}
         />
       </motion.div>
       <motion.p

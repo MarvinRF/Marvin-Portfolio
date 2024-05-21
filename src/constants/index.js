@@ -1,7 +1,9 @@
+javascript;
 import {
   mobile,
   backend,
   creator,
+  senai,
   web,
   javascript,
   typescript,
@@ -45,19 +47,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: 'Web Developer',
+    title: 'Next',
     icon: web,
   },
   {
-    title: 'React Developer',
+    title: 'React',
     icon: mobile,
   },
   {
-    title: 'Backend Java',
+    title: 'Java',
     icon: backend,
   },
   {
-    title: 'Java Professor',
+    title: 'Web Design Teacher',
     icon: creator,
   },
 ];
@@ -114,102 +116,129 @@ const technologies = [
 ];
 
 const initial = {
-  title: 'Oi, eu sou o ',
+  title: 'Hi, I am ',
   span: 'Marvin',
-  text: 'Sou Desenvolvedor Front-End',
-  text2: 'Especializado na criação de sites modernos e responsivos.',
+  text: 'I am a Front-End Developer',
+  text2: 'Specialized in creating modern and responsive websites.',
 };
 
 const about = {
-  text: 'Introdução',
-  title: 'Visão Geral.',
+  text: 'Introduction',
+  title: 'Overview.',
   foto: minhafoto,
   description:
-    'Sou um desenvolvedor de front-end especializado em React.js, apaixonado por criar e implementar interfaces de usuário de forma funcional e visualmente atraente. Com uma sólida experiência em tecnologias como Redux, Vue, tailwind, Bootstrap, JavaScript, Gulp, SASS e CSS, estou constantemente buscando aprimorar minhas habilidades para estar sempre atualizado com as tendências do mercado..',
+    'I am a front-end developer specialized in React.js, passionate about creating and implementing user interfaces in a functional and visually appealing way. With solid experience in technologies like Redux, Vue, Tailwind, Bootstrap, JavaScript, Gulp, SASS, and CSS, I am constantly seeking to improve my skills to stay updated with market trends.',
 };
 
 const works = {
-  text: 'Meu trabalho',
-  title: 'Projetos.',
+  text: 'My work',
+  title: 'Projects.',
   description:
-    'Como profissional, estou sempre buscando desafios empolgantes que me permitam crescer profissionalmente e contribuir positivamente para a equipe. Aqui estão alguns dos meus ultimos projetos.',
+    'As a professional, I am always seeking exciting challenges that allow me to grow professionally and positively contribute to the team. Here are some of my latest projects.',
 };
 
 const feedback = {
-  text: 'O que outros tem a dizer',
+  text: 'What others have to say',
   title: 'Feedback.',
-  noun: 'em',
+  noun: 'in',
 };
 
 const experience = {
-  text: 'O que eu ja fiz até aqui',
-  title: 'Experiência de Trabalho.',
+  text: 'What I have done so far',
+  title: 'Work Experience.',
 };
 
 const contact = {
-  text: 'Entre em Contato',
-  title: 'Contato.',
-  camp_name: 'Seu Nome',
-  camp_name_placeholder: 'Como se chama?',
-  camp_email: 'Seu E-mail',
-  camp_email_placeholder: 'Digite o seu E-mail',
-  camp_message: 'Sua Mensagem',
-  camp_message_placeholder: 'O que tem a dizer?',
-  button_sending: 'Enviando...',
-  button_send: 'Enviar',
-  alert: 'Obrigado, eu entrarei em contato com você assim que puder!',
-  alert_error: 'Algo deu errado!',
+  text: 'Get in Touch',
+  title: 'Contact.',
+  camp_name: 'Your Name',
+  camp_name_placeholder: 'What is your name?',
+  camp_email: 'Your Email',
+  camp_email_placeholder: 'Enter your Email',
+  camp_message: 'Your Message',
+  camp_message_placeholder: 'What do you want to say?',
+  button_sending: 'Sending...',
+  button_send: 'Send',
+  alert: 'Thank you, I will get in touch with you as soon as possible!',
+  alert_error: 'Something went wrong!',
 };
 
 const experiences = [
   {
-    title: 'React Developer',
-    company_name: 'Innovats (meio periodo)',
-    icon: innovats,
+    title: 'Web Design Teacher',
+    company_name: 'Senai (Part-time Contract afternoons)',
+    icon: senai,
     iconBg: '#383E56',
-    date: 'Jul de 2023 - Presente',
+    date: 'Jul 2023 - Present',
     points: [
-      'Desenvolvimento e manutenção de aplicações web utilizando React e outras tecnologias relacionadas.',
-      'Colaboração com equipes multifuncionais, incluindo designers, gerentes de produto e outros desenvolvedores, para criar produtos de alta qualidade.',
-      'Implementando design responsivo e garantindo compatibilidade entre diferentes navegadores.',
-      'Participação de revisões de código.',
+      'Web Development Teacher.',
+      'Focus on basis: JS, Git, Bootstrap, CSS, Gulp, SASS, and HTML.',
+      'Teaching approach is student-centered.',
+      'Focus on problem solving.',
     ],
   },
   {
-    title: 'Analista de Dados',
+    title: 'React Developer',
+    company_name: 'Innovats (Volunteer)',
+    icon: innovats,
+    iconBg: '#383E56',
+    date: 'Jul 2023 - Present',
+    points: [
+      'Development and maintenance of web applications using React and other related technologies.',
+      'Collaborating with cross-functional teams, including designers, product managers, and other developers, to create high-quality products.',
+      'Implementing responsive design and ensuring cross-browser compatibility.',
+      'Participating in code reviews.',
+    ],
+  },
+  {
+    title: 'Moderator',
     company_name: 'TELUS International (Freelance)',
     icon: telus,
     iconBg: '#E6DEDD',
-    date: 'Mar de 2023 - Presente',
+    date: 'Mar 2023 - Present',
     points: [
-      'Avaliador de buscas, especificamente como a avaliação da precisão de buscas.',
-      'Avalio a intenção e a precisão das consultas, e se o motor de busca consegue identificar a intenção do usuário.',
-      'Aplico o conhecimento do mercado com as diretrizes fornecidas para avaliar a relevância e a intenção das informações das tarefas para mecanismos de busca parceiros.',
+      'Receive participants at work and guide them through the session in a controlled environment.',
+      'Conducting remote guided sessions to help participants set up their devices for study purposes.',
+      'Ongoing support to resolve queries and resolve technical issues that may arise throughout the process.',
+      'Represent and promote the TELUS International AI brand in Brazil.',
     ],
   },
   {
-    title: 'Professor Residente',
-    company_name: 'Colégio Estadual Gentil Paraiso Martins (Noturno)',
+    title: 'Data Analyst',
+    company_name: 'TELUS International (Freelance)',
+    icon: telus,
+    iconBg: '#E6DEDD',
+    date: 'Mar 2023 - Apr 2024',
+    points: [
+      'Search evaluator, specifically evaluating the accuracy of searches.',
+      "Evaluating the intent and accuracy of queries, and whether the search engine can identify the user's intent.",
+      'Applying market knowledge with provided guidelines to evaluate the relevance and intent of task information for partner search engines.',
+    ],
+  },
+  {
+    title: 'Resident Teacher',
+    company_name: 'Colégio Estadual Gentil Paraíso Martins (Night)',
     icon: bahia,
     iconBg: '#383E56',
-    date: 'Out de 2022 - Presente',
+    date: 'Oct 2022 - Apr 2024',
     points: [
-      'Professor de programação Java básico.',
-      'Conceitos de programação, estrutura sequencial, estrutura condicional, estruturas repetitivas.',
-      'Orientação a Objetos, construtores, sobrecarga, encapsulamento.',
+      'Basic Java programming teacher.',
+      'Programming concepts, sequential structure, conditional structure, repetitive structures.',
+      'Object Orientation, constructors, overloading, encapsulation.',
     ],
   },
   {
-    title: 'Coordenador de Ti',
-    company_name: 'Prefeitura de Valença-Ba (Meio Periodo)',
+    title: 'IT Coordinator',
+    company_name: 'Prefeitura de Valença-Ba (Part-time contract morning)',
     icon: valenca,
     iconBg: '#E6DEDD',
-    date: 'Mai de 2022 - Presente',
+    date: 'May 2022 - Jan 2025',
     points: [
-      'Líder no processo de informatização da educação do município de Valença-BA , atendimento a 137 escolas.',
-      'Atendimento às dúvidas e solicitações de usuários internos e externos.',
-      'Criar documentações que facilitem o aprendizado de novos colaboradores(diretores, secretários, coordenadores e professores).',
-      'Identificação de melhorias no sistema e no processo de atendimento (junto a equipe de desenvolvimento).',
+      'Leading the digital transformation of the educational system in Valença-BA, managing IT services for 137 schools.',
+      'Serving as the primary liaison between users and the development team, effectively translating client needs into actionable development tasks.',
+      'Responding to and resolving internal and external user queries and requests.',
+      'Developing comprehensive documentation to aid in the training and onboarding of new staff (including directors, secretaries, coordinators, and teachers).',
+      'Driving system enhancements and process improvements through continuous feedback and collaboration with the development team.',
     ],
   },
 ];
@@ -217,15 +246,15 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      'Com a colaboração crucial de Marvin, a implementação do sistema de educação tornou-se uma empreitada de sucesso.',
+      "With Marvin's crucial collaboration, the implementation of the education system became a successful endeavor.",
     name: 'Manoel Soares',
-    designation: 'Diretor de tecnologia',
+    designation: 'Technology Director',
     company: 'Prefeitura Municipal de Valença.',
     image: manoel,
   },
   {
     testimonial:
-      'Marvin brilha nas aulas de web! muito dedicado e habilidoso, extremamente competitivo. sempre com ótimas entregas!',
+      'Marvin shines in web classes! Very dedicated and skilled, extremely competitive. Always with great deliveries!',
     name: 'Addson Araujo',
     designation: 'Professor',
     company: 'IFBA',
@@ -233,7 +262,7 @@ const testimonials = [
   },
   {
     testimonial:
-      'Seu trabalho inovador e dedicação são incomparáveis, atuou em diversos projetos como fullstack!.',
+      'His innovative work and dedication are unmatched, he has worked on various projects as a front-end developer.',
     name: 'Victor Calazans',
     designation: 'CEO',
     company: 'Innovats',
@@ -243,9 +272,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: 'Lista de Tarefas',
+    name: 'Task List',
     description:
-      'Lista de Tarefas responsiva, construída com React.js, e hospedada na Vercel. Este projeto combina tecnologia de ponta com facilidade de uso, proporcionando uma experiência de gerenciamento de tarefas eficiente e intuitiva.',
+      'Responsive Task List, built with React.js, and hosted on Vercel. This project combines cutting-edge technology with ease of use, providing an efficient and intuitive task management experience.',
     tags: [
       {
         name: 'React',
@@ -263,7 +292,7 @@ const projects = [
   {
     name: 'Netflix One-Piece',
     description:
-      'Construí a presente página com a intenção de trazer uma cara nova para a página da série live-action de One Piece, modifiquei muita coisa que não gostava do site original da Netflix. Dei uma enxugada em alguns conteúdos e adicionei outros.',
+      "I built this page with the intention of bringing a new look to the live-action One Piece series page. I modified many things I didn't like about the original Netflix site. I streamlined some content and added others.",
     tags: [
       {
         name: 'gulp',
@@ -285,7 +314,7 @@ const projects = [
   {
     name: 'Disney+ Clone',
     description:
-      'Construí esta página durante o módulo 21 do curso Profissão: Engenheiro Front-end v2 da EBAC - Escola Britânica de Artes Criativas e Tecnologia. Destaco a utilização do SASS com metodologia (BEM) Block Element Modifier.',
+      "I built this page during module 21 of the EBAC - British School of Creative Arts and Technology's Front-End Engineer Profession v2 course. I highlight the use of SASS with the (BEM) Block Element Modifier methodology.",
     tags: [
       {
         name: 'gulp',

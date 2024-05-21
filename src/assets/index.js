@@ -24,6 +24,7 @@ import threejs from './tech/threejs.svg';
 import valenca from './company/valenca.png';
 import bahia from './company/bahia.png';
 import innovats from './company/innovats.png';
+import senai from './company/senai.png';
 import telus from './company/telus.png';
 
 import todo from './todo.png';
@@ -64,6 +65,7 @@ export {
   bahia,
   innovats,
   telus,
+  senai,
   todo,
   onepiece,
   disney,
