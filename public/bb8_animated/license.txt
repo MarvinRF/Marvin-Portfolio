@@ -1,0 +1,11 @@
+Model Information:
+* title:	BB8 (Animated)
+* source:	https://sketchfab.com/3d-models/bb8-animated-15db7644c5b645f195f4d2dc0c5154ec
+* author:	StarWars-Universe (https://sketchfab.com/SWU)
+
+Model License:
+* license type:	CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions must have the same license.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "BB8 (Animated)" (https://sketchfab.com/3d-models/bb8-animated-15db7644c5b645f195f4d2dc0c5154ec) by StarWars-Universe (https://sketchfab.com/SWU) licensed under CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
