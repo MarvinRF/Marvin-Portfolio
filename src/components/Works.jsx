@@ -27,7 +27,7 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="w-full rounded-2xl bg-tertiary p-5 sm:w-[360px]"
+        className="w-full rounded-2xl bg-[#875B43] p-5 sm:w-[360px]"
       >
         <div className="relative h-[230px] w-full">
           <img
@@ -38,7 +38,7 @@ const ProjectCard = ({
           <div className="card-img_hover absolute inset-0 m-3 flex justify-end">
             <div
               onClick={() => window.open(vercel_code_link, '_blank')}
-              className="black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full"
+              className="black-gradient me-1 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full"
             >
               <img
                 src={vercel}

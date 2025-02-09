@@ -20,11 +20,13 @@ import redux from './tech/redux.png';
 import tailwind from './tech/tailwind.png';
 import typescript from './tech/typescript.png';
 import threejs from './tech/threejs.svg';
+import zustand from './tech/zustand.svg';
 
 import valenca from './company/valenca.png';
 import bahia from './company/bahia.png';
 import innovats from './company/innovats.png';
 import senai from './company/senai.png';
+import wrm from './company/WRM.png';
 import telus from './company/telus.png';
 
 import todo from './todo.png';
@@ -40,6 +42,7 @@ export {
   minhafoto,
   victor,
   addson,
+  zustand,
   logo,
   backend,
   creator,
@@ -66,6 +69,7 @@ export {
   innovats,
   telus,
   senai,
+  wrm,
   todo,
   onepiece,
   disney,

@@ -2,7 +2,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/no-unknown-property */
 import { Suspense, useEffect, useState } from 'react';
-import { Canvas } from '@react-three/fiber';
+import { Canvas, useFrame } from '@react-three/fiber'; // Adicionado useFrame
 import {
   OrbitControls,
   Preload,
@@ -14,15 +14,27 @@ import * as THREE from 'three';
 
 const Bb8 = ({ isMobile }) => {
   const { scene, animations } = useGLTF('./bb8_animated/scene.gltf');
-  const { actions } = useAnimations(animations, scene);
+  const { actions, mixer } = useAnimations(animations, scene);
+
+  // Adicionado hook para atualizar o mixer
+  useFrame((_, delta) => {
+    mixer.update(delta);
+  });
 
   useEffect(() => {
-    // A animação "Animation" começa automaticamente quando o modelo é carregado
-    if (actions && actions['Animation']) {
-      actions['Animation'].play(); // Inicia a animação "Animation"
-      actions['Animation'].setLoop(THREE.LoopRepeat, Infinity); // Define o loop da animação
+    if (actions && actions.Animation) {
+      // Configuração correta da animação
+      actions.Animation.setLoop(THREE.LoopRepeat, Infinity) // Configura loop primeiro
+        .play(); // Depois inicia a animação
     }
-  }, [actions]); // Vai ser chamado apenas quando actions for definido
+
+    // Cleanup para parar animação ao desmontar
+    return () => {
+      if (actions && actions.Animation) {
+        actions.Animation.stop();
+      }
+    };
+  }, [actions]);
 
   return (
     <mesh>
@@ -38,8 +50,9 @@ const Bb8 = ({ isMobile }) => {
       />
       <primitive
         object={scene}
-        scale={isMobile ? 4 : 3}
+        scale={isMobile ? 4 : 5}
         position-y={isMobile ? -2.2 : -2.9}
+        position-x={isMobile ? 1.2 : 1}
         rotation-y={0}
       />
     </mesh>
@@ -78,7 +91,7 @@ const Bb8Canvas = () => {
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
-          autoRotate={false}
+          autoRotate
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}

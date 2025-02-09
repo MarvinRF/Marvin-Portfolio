@@ -1,9 +1,10 @@
 javascript;
 import {
   mobile,
-  backend,
+  zustand,
   creator,
   senai,
+  wrm,
   web,
   javascript,
   typescript,
@@ -47,35 +48,31 @@ export const navLinks = [
 
 const services = [
   {
-    title: 'Next',
+    title: 'Next.js',
     icon: web,
   },
   {
-    title: 'React',
+    title: 'React.js',
     icon: mobile,
   },
   {
-    title: 'Java',
-    icon: backend,
+    title: 'Zustand',
+    icon: zustand,
   },
   {
-    title: 'Web Design Teacher',
+    title: 'React Query',
     icon: creator,
   },
 ];
 
 const technologies = [
   {
-    name: 'HTML 5',
-    icon: html,
+    name: 'Next.js',
+    icon: web,
   },
   {
-    name: 'CSS 3',
-    icon: css,
-  },
-  {
-    name: 'Bootstrap',
-    icon: bootstrap,
+    name: 'Tailwind CSS',
+    icon: tailwind,
   },
   {
     name: 'JavaScript',
@@ -86,39 +83,51 @@ const technologies = [
     icon: typescript,
   },
   {
-    name: 'Vue',
-    icon: vue,
+    name: 'Zustand',
+    icon: zustand,
   },
   {
-    name: 'React JS',
-    icon: reactjs,
+    name: 'query',
+    icon: css,
   },
   {
     name: 'Redux Toolkit',
     icon: redux,
   },
   {
-    name: 'Tailwind CSS',
-    icon: tailwind,
+    name: 'Bootstrap',
+    icon: bootstrap,
+  },
+  {
+    name: 'Sass',
+    icon: html,
   },
   {
     name: 'Three JS',
     icon: threejs,
   },
   {
-    name: 'Postgre',
-    icon: postgre,
+    name: 'Express',
+    icon: java,
   },
   {
-    name: 'Java',
-    icon: java,
+    name: 'Redis',
+    icon: vue,
+  },
+  {
+    name: 'Prisma',
+    icon: reactjs,
+  },
+  {
+    name: 'Postgres',
+    icon: postgre,
   },
 ];
 
 const initial = {
   title: 'Hi, I am ',
   span: 'Marvin',
-  text: 'I am a Front-End Developer',
+  text: "I'm a Front-End Dev",
   text2: 'Specialized in creating modern and responsive websites.',
 };
 
@@ -165,11 +174,23 @@ const contact = {
 
 const experiences = [
   {
+    title: 'Front end Developer',
+    company_name: 'WRM Tecnologia',
+    icon: wrm,
+    iconBg: '#E6DEDD',
+    date: 'Aug 2024 - Present',
+    points: [
+      'Fintech based in Brasília.',
+      'Next.js developer, focus on SSR, TS, Tailwind, Zustand, JWT, Back-End for Front-End, SASS...',
+      'Implementation of reusable and responsive components, ensuring an intuitive and efficient user experience.',
+    ],
+  },
+  {
     title: 'Web Design Teacher',
     company_name: 'Senai (Part-time Contract afternoons)',
     icon: senai,
     iconBg: '#383E56',
-    date: 'Abr 2024 - Present',
+    date: 'Abr 2024 - Aug 2024',
     points: [
       'Focus on fundamentals: JS, Git, Bootstrap, CSS, Gulp, SASS, and HTML.',
       'Student-centered teaching approach.',
@@ -178,10 +199,10 @@ const experiences = [
   },
   {
     title: 'Moderator',
-    company_name: 'TELUS International (Freelance)',
+    company_name: 'TELUS International',
     icon: telus,
     iconBg: '#E6DEDD',
-    date: 'Abr 2024 - Present',
+    date: 'Abr 2024 - Aug 2024',
     points: [
       'Greet and guide participants through sessions in a controlled environment.',
       'Conduct remote guided sessions to assist participants in setting up their devices for research purposes.',
@@ -191,10 +212,10 @@ const experiences = [
   },
   {
     title: 'React Developer',
-    company_name: 'Innovats (Volunteer)',
+    company_name: 'Innovats',
     icon: innovats,
     iconBg: '#383E56',
-    date: 'Jul 2023 - Present',
+    date: 'Jul 2023 - Jul 2024',
     points: [
       'Development and maintenance of web applications using React and other related technologies.',
       'Collaborating with cross-functional teams, including designers, product managers, and other developers, to create high-quality products.',
@@ -204,7 +225,7 @@ const experiences = [
   },
   {
     title: 'Data Analyst',
-    company_name: 'TELUS International (Freelance)',
+    company_name: 'TELUS International',
     icon: telus,
     iconBg: '#E6DEDD',
     date: 'Mar 2023 - Apr 2024',
@@ -271,7 +292,7 @@ const testimonials = [
 
 const projects = [
   {
-    name: 'Task List',
+    name: 'CodeForge Academy',
     description:
       'Responsive Task List, built with React.js, and hosted on Vercel. This project combines cutting-edge technology with ease of use, providing an efficient and intuitive task management experience.',
     tags: [
@@ -286,8 +307,71 @@ const projects = [
     ],
     image: todo,
     source_code_link: 'https://github.com/MarvinRF/todo-react',
-    vercel_code_link: 'https://todo-react-one-red.vercel.app/',
+    vercel_code_link: 'https://www.codeforgeacademy.com.br/',
   },
+  {
+    name: 'E Food',
+    description:
+      'Responsive Task List, built with React.js, and hosted on Vercel. This project combines cutting-edge technology with ease of use, providing an efficient and intuitive task management experience.',
+    tags: [
+      {
+        name: 'React',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'vite',
+        color: 'green-text-gradient',
+      },
+    ],
+    image: todo,
+    source_code_link: 'https://github.com/MarvinRF/todo-react',
+    vercel_code_link: 'https://e-food-app-rho.vercel.app/',
+  },
+  {
+    name: 'E Play Store',
+    description:
+      'Responsive Task List, built with React.js, and hosted on Vercel. This project combines cutting-edge technology with ease of use, providing an efficient and intuitive task management experience.',
+    tags: [
+      {
+        name: 'React',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'vite',
+        color: 'green-text-gradient',
+      },
+    ],
+    image: todo,
+    source_code_link: 'https://github.com/MarvinRF/todo-react',
+    vercel_code_link: 'https://e-play-store-plum.vercel.app/',
+  },
+  {
+    name: 'iPhone 15 Pro Website',
+    description:
+      'A complete new website with 3D elements for the brand new iPhone 15',
+    tags: [
+      {
+        name: 'React',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'Tailwind',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'Tree.js',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'GSAP',
+        color: 'blue-text-gradient',
+      },
+    ],
+    image: todo,
+    source_code_link: 'https://github.com/MarvinRF/todo-react',
+    vercel_code_link: 'https://apple-website-sooty.vercel.app/',
+  },
+
   {
     name: 'Netflix One-Piece',
     description:

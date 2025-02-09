@@ -18,7 +18,7 @@ const FeedbackCard = ({
   return (
     <motion.div
       variants={fadeIn('', 'spring', index * 0.5, 0.75)}
-      className="w-full rounded-3xl bg-black-200 p-10 xs:w-[320px]"
+      className="w-full rounded-3xl bg-[#875B43] p-10 xs:w-[320px]"
     >
       <p className="text-[48px] font-black text-white">&quot;</p>
 
@@ -57,9 +57,9 @@ FeedbackCard.propTypes = {
 
 const Feedbacks = () => {
   return (
-    <div className={`mt-12 rounded-[20px] bg-black-100`}>
+    <div className={`mt-12 rounded-[20px] bg-[#D5B397]`}>
       <div
-        className={`rounded-2xl bg-tertiary ${styles.padding} min-h-[300px]`}
+        className={`rounded-2xl bg-[#D0CAE3] ${styles.padding} min-h-[300px]`}
       >
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>{feedback.text}</p>
