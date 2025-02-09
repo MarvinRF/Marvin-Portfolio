@@ -50,7 +50,7 @@ const R2D2 = ({ isMobile }) => {
       />
       <primitive
         object={scene}
-        scale={isMobile ? 4 : 5}
+        scale={isMobile ? 5.5 : 5}
         position-y={isMobile ? -2.2 : -2.5}
         position-x={isMobile ? 0 : 0}
         rotation-y={0}
