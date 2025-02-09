@@ -1,13 +1,13 @@
+/* eslint-disable react/jsx-no-undef */
 /* eslint-disable react-refresh/only-export-components */
 import { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
-
 import { contact } from '../constants';
 import { styles } from '../styles';
-import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
+import R2D2Canvas from './canvas/R2D2';
 
 const Contact = () => {
   const formRef = useRef();
@@ -137,7 +137,7 @@ const Contact = () => {
         variants={slideIn('right', 'tween', 0.2, 1)}
         className="h-[350px] md:h-[550px] xl:h-auto xl:flex-1"
       >
-        <EarthCanvas />
+        <R2D2Canvas />
       </motion.div>
     </div>
   );
