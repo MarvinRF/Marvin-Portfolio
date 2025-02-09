@@ -6,6 +6,9 @@ import {
   senai,
   wrm,
   web,
+  codeforge,
+  efod,
+  eplay,
   javascript,
   typescript,
   html,
@@ -294,25 +297,33 @@ const projects = [
   {
     name: 'CodeForge Academy',
     description:
-      'Responsive Task List, built with React.js, and hosted on Vercel. This project combines cutting-edge technology with ease of use, providing an efficient and intuitive task management experience.',
+      'A modern and interactive study platform made from scratch for my university IFBA, I built with Next.js 15, TypeScript, Tailwind CSS, Express, Prisma, Redis, Postgres, Datadog, Socket.IO. Features server components, modern authentication, and a beautiful UI/UX design.',
     tags: [
       {
-        name: 'React',
+        name: 'Next.js',
         color: 'blue-text-gradient',
       },
       {
-        name: 'vite',
+        name: 'Tailwind',
         color: 'green-text-gradient',
       },
+      {
+        name: 'GSAP',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'Fullstack',
+        color: 'pink-text-gradient',
+      },
     ],
-    image: todo,
+    image: codeforge,
     source_code_link: 'https://github.com/MarvinRF/todo-react',
     vercel_code_link: 'https://www.codeforgeacademy.com.br/',
   },
   {
     name: 'E Food',
     description:
-      'Responsive Task List, built with React.js, and hosted on Vercel. This project combines cutting-edge technology with ease of use, providing an efficient and intuitive task management experience.',
+      'E-Food is an e-commerce platform for restaurant delivery. The page features six restaurants, each with its own menu, all imported from the back end. My idea was to create a dynamic front end that updates automatically when new establishments are added. This way, upon making a request to the back end, the front end automatically includes new restaurants.',
     tags: [
       {
         name: 'React',
@@ -323,14 +334,14 @@ const projects = [
         color: 'green-text-gradient',
       },
     ],
-    image: todo,
+    image: efod,
     source_code_link: 'https://github.com/MarvinRF/todo-react',
     vercel_code_link: 'https://e-food-app-rho.vercel.app/',
   },
   {
     name: 'E Play Store',
     description:
-      'Responsive Task List, built with React.js, and hosted on Vercel. This project combines cutting-edge technology with ease of use, providing an efficient and intuitive task management experience.',
+      'E-Play is a digital game e-commerce platform. The page features a variety of games and categories, each with its own dedicated detail page, all dynamically imported from the back end. My goal was to build a responsive front end that updates automatically whenever new games are added. This way, every request to the back end seamlessly integrates new games into the platform.',
     tags: [
       {
         name: 'React',
@@ -341,14 +352,14 @@ const projects = [
         color: 'green-text-gradient',
       },
     ],
-    image: todo,
+    image: eplay,
     source_code_link: 'https://github.com/MarvinRF/todo-react',
     vercel_code_link: 'https://e-play-store-plum.vercel.app/',
   },
   {
     name: 'iPhone 15 Pro Website',
     description:
-      'A complete new website with 3D elements for the brand new iPhone 15',
+      'Recreating the Apple iPhone 15 Pro website with a seamless blend of GSAP animations and Three.js 3D effects. This tutorial takes you through custom animations, interactive 3D models, and dynamic visual storytelling.',
     tags: [
       {
         name: 'React',
