@@ -25,12 +25,10 @@ import {
   telus,
   innovats,
   todo,
-  onepiece,
   manoel,
   minhafoto,
   victor,
   addson,
-  disney,
   threejs,
 } from '../assets';
 
@@ -379,53 +377,8 @@ const projects = [
       },
     ],
     image: todo,
-    source_code_link: 'https://github.com/MarvinRF/todo-react',
+    source_code_link: 'https://github.com/MarvinRF/apple-website',
     vercel_code_link: 'https://apple-website-sooty.vercel.app/',
-  },
-
-  {
-    name: 'Netflix One-Piece',
-    description:
-      "I built this page with the intention of bringing a new look to the live-action One Piece series page. I modified many things I didn't like about the original Netflix site. I streamlined some content and added others.",
-    tags: [
-      {
-        name: 'gulp',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'sass',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'javaScript',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: onepiece,
-    source_code_link: 'https://github.com/MarvinRF/One_Piece-Marvin_Rocha',
-    vercel_code_link: 'https://one-piece-marvin-rocha.vercel.app/',
-  },
-  {
-    name: 'Disney+ Clone',
-    description:
-      "I built this page during module 21 of the EBAC - British School of Creative Arts and Technology's Front-End Engineer Profession v2 course. I highlight the use of SASS with the (BEM) Block Element Modifier methodology.",
-    tags: [
-      {
-        name: 'gulp',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'sass',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'JavaScript',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: disney,
-    source_code_link: 'https://github.com/MarvinRF/Clone_DisneyPlus',
-    vercel_code_link: 'https://clone-disney-plus-jcxk.vercel.app/',
   },
 ];
 
