@@ -39,7 +39,7 @@ import eplay from './e-play.png';
 import manoel from './manoel.png';
 import addson from './addson.png';
 import victor from './victor.png';
-import minhafoto from './minhafoto.png';
+import minhafoto from './minhafoto.jpeg';
 export {
   manoel,
   codeforge,
