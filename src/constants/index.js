@@ -8,8 +8,6 @@ import {
   victor,
   addson,
   zustand,
-  creator,
-  mobile,
   web,
   express,
   next,
@@ -57,16 +55,16 @@ const services = [
     icon: web,
   },
   {
-    title: 'React.js',
-    icon: mobile,
-  },
-  {
     title: 'Zustand',
     icon: zustand,
   },
   {
-    title: 'React Query',
-    icon: creator,
+    title: 'Nest.js',
+    icon: nest,
+  },
+  {
+    title: 'TypeOrm',
+    icon: typeorm,
   },
 ];
 
