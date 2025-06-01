@@ -20,7 +20,7 @@ import reactquery from './tech/react-query.png';
 import nest from './tech/nest.svg';
 import next from './tech/next.svg';
 import typeorm from './tech/typeorm.svg'
-import prisma from './tech/prisa.png';
+import prisma from './tech/prisma.png';
 import redux from './tech/redux.png';
 import tailwind from './tech/tailwind.png';
 import typescript from './tech/typescript.png';
