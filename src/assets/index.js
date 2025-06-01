@@ -8,14 +8,19 @@ import vercel from './vercel.png';
 import menu from './menu.svg';
 import close from './close.svg';
 
-import css from './tech/css.png';
+
 import bootstrap from './tech/bootstrap.png';
-import java from './tech/java.png';
-import html from './tech/html.png';
+import express from './tech/express.png'
 import javascript from './tech/javascript.png';
-import vue from './tech/vue.png';
 import postgre from './tech/postgre.png';
-import reactjs from './tech/reactjs.png';
+import sass from './tech/sass.png'
+import react from './tech/react.svg';
+import redis from './tech/redis.png'
+import reactquery from './tech/react-query.png';
+import nest from './tech/nest.svg';
+import next from './tech/next.svg';
+import typeorm from './tech/typeorm.svg'
+import prisma from './tech/prisa.png';
 import redux from './tech/redux.png';
 import tailwind from './tech/tailwind.png';
 import typescript from './tech/typescript.png';
@@ -58,14 +63,18 @@ export {
   vercel,
   menu,
   close,
-  css,
   bootstrap,
-  java,
-  html,
+  sass,
+  react ,
+  reactquery,
+  nest,
+  express,
+  redis,
+  next,
+  typeorm,
+  prisma,
   javascript,
   postgre,
-  vue,
-  reactjs,
   redux,
   tailwind,
   typescript,

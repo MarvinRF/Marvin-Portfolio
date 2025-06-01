@@ -1,35 +1,39 @@
 javascript;
 import {
-  mobile,
-  zustand,
-  creator,
-  senai,
-  wrm,
-  web,
+  manoel,
   codeforge,
   efod,
   eplay,
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  postgre,
-  java,
-  bootstrap,
-  vue,
-  valenca,
-  bahia,
-  telus,
-  innovats,
-  todo,
-  manoel,
   minhafoto,
   victor,
   addson,
+  zustand,
+  creator,
+  mobile,
+  web,
+  express,
+  next,
+  bootstrap,
+  sass,
+  react,
+  reactquery,
+  nest,
+  typeorm,
+  redis,
+  prisma,
+  javascript,
+  postgre,
+  redux,
+  tailwind,
+  typescript,
   threejs,
+  valenca,
+  bahia,
+  innovats,
+  telus,
+  senai,
+  wrm,
+  todo,
 } from '../assets';
 
 export const navLinks = [
@@ -68,14 +72,6 @@ const services = [
 
 const technologies = [
   {
-    name: 'Next.js',
-    icon: web,
-  },
-  {
-    name: 'Tailwind CSS',
-    icon: tailwind,
-  },
-  {
     name: 'JavaScript',
     icon: javascript,
   },
@@ -84,12 +80,24 @@ const technologies = [
     icon: typescript,
   },
   {
+    name: 'Next.js',
+    icon: next,
+  },
+  {
+    name: 'React',
+    icon: react,
+  },
+  {
+    name: 'Tailwind CSS',
+    icon: tailwind,
+  },
+  {
     name: 'Zustand',
     icon: zustand,
   },
   {
     name: 'query',
-    icon: css,
+    icon: reactquery,
   },
   {
     name: 'Redux Toolkit',
@@ -101,7 +109,7 @@ const technologies = [
   },
   {
     name: 'Sass',
-    icon: html,
+    icon: sass,
   },
   {
     name: 'Three JS',
@@ -109,15 +117,23 @@ const technologies = [
   },
   {
     name: 'Express',
-    icon: java,
+    icon: express,
+  },
+  {
+    name: 'Nest.js',
+    icon: nest,
+  },
+  {
+    name: 'TypeOrm',
+    icon: typeorm,
   },
   {
     name: 'Redis',
-    icon: vue,
+    icon: redis,
   },
   {
     name: 'Prisma',
-    icon: reactjs,
+    icon: prisma,
   },
   {
     name: 'Postgres',
