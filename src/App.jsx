@@ -4,7 +4,12 @@ import { LanguageProvider } from './context/LanguageContext';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter
+      future={{
+        v7_startTransition: true,
+        v7_relativeSplatPath: true,
+      }}
+    >
       <LanguageProvider>
         <div className="relative z-0 bg-primary">
           <div className="bg-hero-pattern bg-cover bg-center bg-no-repeat">
