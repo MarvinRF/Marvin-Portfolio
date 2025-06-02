@@ -7,14 +7,7 @@ import { SectionWrapper } from '../hoc';
 import { fadeIn, textVariant } from '../utils/motion';
 import { testimonials, feedback } from '../constants';
 
-const FeedbackCard = ({
-  index,
-  testimonial,
-  name,
-  designation,
-  company,
-  image,
-}) => {
+const FeedbackCard = ({ index, testimonial, name, designation, company, image }) => {
   return (
     <motion.div
       variants={fadeIn('', 'spring', index * 0.5, 0.75)}
@@ -58,9 +51,7 @@ FeedbackCard.propTypes = {
 const Feedbacks = () => {
   return (
     <div className={`mt-12 rounded-[20px] bg-[#D5B397]`}>
-      <div
-        className={`rounded-2xl bg-[#D0CAE3] ${styles.padding} min-h-[300px]`}
-      >
+      <div className={`rounded-2xl bg-[#D0CAE3] ${styles.padding} min-h-[300px]`}>
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>{feedback.text}</p>
           <h2 className={styles.sectionHeadText}>{feedback.title}</h2>

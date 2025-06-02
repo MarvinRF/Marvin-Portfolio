@@ -1,16 +1,13 @@
 /* eslint-disable react-refresh/only-export-components */
 import PropTypes from 'prop-types';
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from 'react-vertical-timeline-component';
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import { motion } from 'framer-motion';
 import 'react-vertical-timeline-component/style.min.css';
-
+import { useLanguage } from '../context/LanguageContext';
 import { styles } from '../styles';
-import { experiences, experience } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { textVariant } from '../utils/motion';
+import { valenca, bahia, innovats, telus, senai, wrm } from '../assets';
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -31,10 +28,7 @@ const ExperienceCard = ({ experience }) => {
     >
       <div>
         <h3 className="text-[24px] font-bold text-white">{experience.title}</h3>
-        <p
-          className="text-[16px] font-semibold text-secondary"
-          style={{ margin: 0 }}
-        >
+        <p className="text-[16px] font-semibold text-secondary" style={{ margin: 0 }}>
           {experience.company_name}
         </p>
       </div>
@@ -64,11 +58,71 @@ ExperienceCard.propTypes = {
 };
 
 const Experience = () => {
+  const { t } = useLanguage();
+
+  const experiences = [
+    {
+      title: t('work_wrmt_title'),
+      company_name: 'WRM Tecnologia',
+      icon: wrm,
+      iconBg: '#E6DEDD',
+      date: 'Aug 2024 - Present',
+      points: t('work_wrmt_points'),
+    },
+    {
+      title: t('work_senai_title'),
+      company_name: 'Senai (Part-time Contract afternoons)',
+      icon: senai,
+      iconBg: '#383E56',
+      date: 'Abr 2024 - Aug 2024',
+      points: t('work_senai_points'),
+    },
+    {
+      title: t('work_telus_moderator_title'),
+      company_name: 'TELUS International',
+      icon: telus,
+      iconBg: '#E6DEDD',
+      date: 'Abr 2024 - Aug 2024',
+      points: t('work_telus_moderator_points'),
+    },
+    {
+      title: t('work_innovats_title'),
+      company_name: 'Innovats',
+      icon: innovats,
+      iconBg: '#383E56',
+      date: 'Jul 2023 - Jul 2024',
+      points: t('work_innovats_points'),
+    },
+    {
+      title: t('work_telus_analyst_title'),
+      company_name: 'TELUS International',
+      icon: telus,
+      iconBg: '#E6DEDD',
+      date: 'Mar 2023 - Apr 2024',
+      points: t('work_telus_analyst_points'),
+    },
+    {
+      title: t('work_bahia_title'),
+      company_name: 'Colégio Estadual Gentil Paraíso Martins (Night)',
+      icon: bahia,
+      iconBg: '#383E56',
+      date: 'Oct 2022 - Apr 2024',
+      points: t('work_bahia_points'),
+    },
+    {
+      title: t('work_valenca_title'),
+      company_name: 'Prefeitura de Valença-Ba (Part-time contract morning)',
+      icon: valenca,
+      iconBg: '#E6DEDD',
+      date: 'May 2022 - Jan 2025',
+      points: t('work_valenca_points'),
+    },
+  ];
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>{experience.text}</p>
-        <h2 className={styles.sectionHeadText}>{experience.title}</h2>
+        <p className={styles.sectionSubText}>{t('work_section_subtext')}</p>
+        <h2 className={styles.sectionHeadText}>{t('work_section_title')}</h2>
       </motion.div>
 
       <div className="mt-20 flex flex-col">

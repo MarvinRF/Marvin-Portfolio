@@ -30,31 +30,19 @@ const ProjectCard = ({
         className="w-full rounded-2xl bg-[#875B43] p-5 sm:w-[360px]"
       >
         <div className="relative h-[230px] w-full">
-          <img
-            src={image}
-            alt={name}
-            className="h-full w-full rounded-2xl object-cover"
-          />
+          <img src={image} alt={name} className="h-full w-full rounded-2xl object-cover" />
           <div className="card-img_hover absolute inset-0 m-3 flex justify-end">
             <div
               onClick={() => window.open(vercel_code_link, '_blank')}
               className="black-gradient me-1 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full"
             >
-              <img
-                src={vercel}
-                alt={vercel}
-                className="h-1/2 w-1/2 object-contain"
-              />
+              <img src={vercel} alt={vercel} className="h-1/2 w-1/2 object-contain" />
             </div>
             <div
               onClick={() => window.open(source_code_link, '_blank')}
               className="black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full"
             >
-              <img
-                src={github}
-                alt={github}
-                className="h-1/2 w-1/2 object-contain"
-              />
+              <img src={github} alt={github} className="h-1/2 w-1/2 object-contain" />
             </div>
           </div>
         </div>
@@ -63,7 +51,7 @@ const ProjectCard = ({
           <p className="mt-2 text-[14px] text-secondary">{description}</p>
         </div>
         <div className="mt-4 flex flex-wrap gap-2">
-          {tags.map((tag) => (
+          {tags.map(tag => (
             <p key={tag.name} className={`text-[14px] ${tag.color}`}>
               #{tag.name}
             </p>
@@ -82,7 +70,7 @@ ProjectCard.propTypes = {
     PropTypes.shape({
       name: PropTypes.string,
       color: PropTypes.string,
-    }),
+    })
   ),
   image: PropTypes.string,
   source_code_link: PropTypes.string,

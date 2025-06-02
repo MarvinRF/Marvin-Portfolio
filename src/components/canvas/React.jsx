@@ -30,7 +30,7 @@ const ReactLogo = () => {
 
     setIsMobile(mediaQuery.matches);
 
-    const handleMediaQueryChange = (e) => {
+    const handleMediaQueryChange = e => {
       setIsMobile(e.matches);
     };
 

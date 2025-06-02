@@ -8,18 +8,17 @@ import vercel from './vercel.png';
 import menu from './menu.svg';
 import close from './close.svg';
 
-
 import bootstrap from './tech/bootstrap.png';
-import express from './tech/express.png'
+import express from './tech/express.png';
 import javascript from './tech/javascript.png';
 import postgre from './tech/postgre.png';
-import sass from './tech/sass.png'
+import sass from './tech/sass.png';
 import react from './tech/react.svg';
-import redis from './tech/redis.png'
+import redis from './tech/redis.png';
 import reactquery from './tech/react-query.png';
 import nest from './tech/nest.svg';
 import next from './tech/next.svg';
-import typeorm from './tech/typeorm.svg'
+import typeorm from './tech/typeorm.svg';
 import prisma from './tech/prisma.png';
 import redux from './tech/redux.png';
 import tailwind from './tech/tailwind.png';
@@ -65,7 +64,7 @@ export {
   close,
   bootstrap,
   sass,
-  react ,
+  react,
   reactquery,
   nest,
   express,

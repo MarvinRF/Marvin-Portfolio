@@ -1,9 +1,25 @@
 import { motion } from 'framer-motion';
-import { initial } from '../constants';
 import { styles } from '../styles';
 import Bb8Canvas from './canvas/BB8';
+import { useLanguage } from '../context/LanguageContext';
 
 const Hero = () => {
+  const { t } = useLanguage();
+
+  const heroKeys = {
+    title: 'initial_title',
+    span: 'initial_span',
+    text1: 'initial_text',
+    text2: 'initial_text2',
+  };
+
+  const heroContent = {
+    title: t(heroKeys.title),
+    span: t(heroKeys.span),
+    text1: t(heroKeys.text1),
+    text2: t(heroKeys.text2),
+  };
+
   return (
     <section className="relative mx-auto h-screen w-full">
       <div
@@ -15,14 +31,12 @@ const Hero = () => {
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            {initial.title}
-            <span className="text-[#F0D1B8]">{initial.span}</span>
+            {heroContent.title}
+            <span className="text-[#F0D1B8]">{heroContent.span}</span>
           </h1>
-          <p
-            className={`${styles.heroSubText} text-swadow-lg mt-2 text-white-100`}
-          >
-            {initial.text} <br className="hidden sm:block" />
-            <span className="hidden sm:block">{initial.text2}</span>
+          <p className={`${styles.heroSubText} text-swadow-lg mt-2 text-white-100`}>
+            {heroContent.text} <br className="hidden sm:block" />
+            <span className="hidden sm:block">{heroContent.text2}</span>
           </p>
         </div>
       </div>

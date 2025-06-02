@@ -3,12 +3,7 @@
 /* eslint-disable react/no-unknown-property */
 import { Suspense, useEffect, useState } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber'; // Adicionado useFrame
-import {
-  OrbitControls,
-  Preload,
-  useGLTF,
-  useAnimations,
-} from '@react-three/drei';
+import { OrbitControls, Preload, useGLTF, useAnimations } from '@react-three/drei';
 import CanvasLoader from '../Loader';
 import * as THREE from 'three';
 
@@ -41,13 +36,7 @@ const Bb8 = ({ isMobile }) => {
       <hemisphereLight intensity={6} groundColor="black" />
       <directionalLight intensity={6} position={[1, 7, 6]} castShadow />
       <pointLight intensity={10} position={[2, 3, 2]} distance={10} />
-      <spotLight
-        intensity={8}
-        position={[2, 5, 2]}
-        angle={0.3}
-        penumbra={0.5}
-        castShadow
-      />
+      <spotLight intensity={8} position={[2, 5, 2]} angle={0.3} penumbra={0.5} castShadow />
       <primitive
         object={scene}
         scale={isMobile ? 4 : 5}
@@ -66,7 +55,7 @@ const Bb8Canvas = () => {
     const mediaQuery = window.matchMedia('(max-width: 500px)');
     setIsMobile(mediaQuery.matches);
 
-    const handleMediaQueryChange = (e) => {
+    const handleMediaQueryChange = e => {
       setIsMobile(e.matches);
     };
 

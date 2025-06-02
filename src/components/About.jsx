@@ -4,9 +4,9 @@ import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 import PropTypes from 'prop-types';
 import { useEffect } from 'react';
-
+import { useLanguage } from '../context/LanguageContext';
 import { styles } from '../styles';
-import { services, about } from '../constants';
+import { services } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 import { minhafoto } from '../assets';
@@ -22,9 +22,7 @@ const ServiceCard = ({ index, title, icon }) => (
         className="flex min-h-[280px] flex-col items-center justify-evenly rounded-[20px] bg-[#875B43] px-12 py-5"
       >
         <img src={icon} alt={title} className="h-16 w-16 object-contain" />
-        <h3 className="text-center text-[20px] font-bold text-white">
-          {title}
-        </h3>
+        <h3 className="text-center text-[20px] font-bold text-white">{title}</h3>
       </div>
     </motion.div>
   </Tilt>
@@ -37,6 +35,20 @@ ServiceCard.propTypes = {
 };
 
 const About = () => {
+  const { t } = useLanguage();
+
+  const aboutKeys = {
+    text: 'about_text',
+    title: 'about_title',
+    description: 'about_description',
+  };
+
+  const aboutContent = {
+    text: t(aboutKeys.text),
+    title: t(aboutKeys.title),
+    description: t(aboutKeys.description),
+  };
+
   useEffect(() => {
     const handleResize = () => window.innerWidth < 1155;
     window.addEventListener('resize', handleResize);
@@ -50,8 +62,8 @@ const About = () => {
         className="relative flex flex-col items-center gap-6 lg:flex-row lg:items-start"
       >
         <div className="flex-1">
-          <p className={styles.sectionSubText}>{about.text}</p>
-          <h2 className={styles.sectionHeadText}>{about.title}</h2>
+          <p className={styles.sectionSubText}>{aboutContent.text}</p>
+          <h2 className={styles.sectionHeadText}>{aboutContent.title}</h2>
         </div>
         <div className="h-40 w-40 flex-shrink-0 lg:h-52 lg:w-52">
           <img
@@ -65,7 +77,7 @@ const About = () => {
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 max-w-3xl text-[17px] leading-[30px] text-secondary"
       >
-        {about.description}
+        {aboutContent.description}
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (

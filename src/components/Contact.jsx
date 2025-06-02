@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-no-undef */
 /* eslint-disable react-refresh/only-export-components */
 import { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
@@ -19,7 +18,7 @@ const Contact = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {
+  const handleChange = e => {
     const { target } = e;
     const { name, value } = target;
 
@@ -29,7 +28,7 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = e => {
     e.preventDefault();
     setLoading(true);
 
@@ -45,7 +44,7 @@ const Contact = () => {
           to_email: 'marvinvca@outlook.com',
           message: form.message,
         },
-        'b6HmjeVeq6Dt6A-yt',
+        'b6HmjeVeq6Dt6A-yt'
       )
       .then(
         () => {
@@ -58,20 +57,18 @@ const Contact = () => {
             message: '',
           });
         },
-        (error) => {
+        error => {
           setLoading(false);
 
           console.log(error);
 
           alert(`${contact.alert_error}`);
-        },
+        }
       );
   };
 
   return (
-    <div
-      className={`flex flex-col-reverse gap-10 overflow-hidden xl:mt-12 xl:flex-row`}
-    >
+    <div className={`flex flex-col-reverse gap-10 overflow-hidden xl:mt-12 xl:flex-row`}>
       <motion.div
         variants={slideIn('left', 'tween', 0.2, 1)}
         className="flex-[0.75] rounded-2xl bg-[#D5B397] p-8"
@@ -79,15 +76,9 @@ const Contact = () => {
         <p className={styles.sectionSubText}>{contact.text}</p>
         <h3 className={styles.sectionHeadText}>{contact.title}</h3>
 
-        <form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          className="mt-12 flex flex-col gap-8"
-        >
+        <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col gap-8">
           <label className="flex flex-col">
-            <span className="mb-4 font-medium text-white">
-              {contact.camp_name}
-            </span>
+            <span className="mb-4 font-medium text-white">{contact.camp_name}</span>
             <input
               type="text"
               name="name"
@@ -98,9 +89,7 @@ const Contact = () => {
             />
           </label>
           <label className="flex flex-col">
-            <span className="mb-4 font-medium text-white">
-              {contact.camp_email}
-            </span>
+            <span className="mb-4 font-medium text-white">{contact.camp_email}</span>
             <input
               type="email"
               name="email"
@@ -111,9 +100,7 @@ const Contact = () => {
             />
           </label>
           <label className="flex flex-col">
-            <span className="mb-4 font-medium text-white">
-              {contact.camp_message}
-            </span>
+            <span className="mb-4 font-medium text-white">{contact.camp_message}</span>
             <textarea
               rows={7}
               name="message"
