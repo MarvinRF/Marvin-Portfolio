@@ -44,7 +44,7 @@ const Hero = () => {
       <Bb8Canvas />
 
       <div className="absolute bottom-20 flex w-full items-center justify-center sm:bottom-8">
-        <a href="#about">
+        <a href="#about" aria-label={t('aria_label')}>
           <div className="flex h-[64px] w-[35px] items-start justify-center rounded-3xl border-4 border-zinc-500 p-2">
             <motion.div
               animate={{

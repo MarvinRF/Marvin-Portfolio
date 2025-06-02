@@ -29,6 +29,10 @@ const translations = {
     pt: 'Especializado em criar sites modernos e responsivos.',
     en: 'Specialized in creating modern and responsive websites.',
   },
+  aria_label: {
+    pt: 'Ir para area sobre',
+    en: 'Go to section about',
+  },
 
   //about
   about_text: { pt: 'Introdução', en: 'Introduction' },
