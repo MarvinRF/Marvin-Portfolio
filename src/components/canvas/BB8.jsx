@@ -1,6 +1,3 @@
-/* eslint-disable no-undef */
-/* eslint-disable react/prop-types */
-/* eslint-disable react/no-unknown-property */
 import { Suspense, useEffect, useState } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber'; // Adicionado useFrame
 import { OrbitControls, Preload, useGLTF, useAnimations } from '@react-three/drei';

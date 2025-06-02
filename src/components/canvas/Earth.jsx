@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unknown-property */
 import { Suspense } from 'react';
 import PropTypes from 'prop-types';
 import { Canvas } from '@react-three/fiber';
