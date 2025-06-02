@@ -71,7 +71,7 @@ const Experience = () => {
     },
     {
       title: t('work_senai_title'),
-      company_name: 'Senai (Part-time Contract afternoons)',
+      company_name: 'Senai',
       icon: senai,
       iconBg: '#383E56',
       date: t('work_senai_date'),
@@ -103,7 +103,7 @@ const Experience = () => {
     },
     {
       title: t('work_bahia_title'),
-      company_name: 'Colégio Estadual Gentil Paraíso Martins (Night)',
+      company_name: 'Colégio Estadual Gentil Paraíso Martins',
       icon: bahia,
       iconBg: '#383E56',
       date: t('work_bahia_date'),
@@ -111,7 +111,7 @@ const Experience = () => {
     },
     {
       title: t('work_valenca_title'),
-      company_name: 'Prefeitura de Valença-Ba (Part-time contract morning)',
+      company_name: 'Prefeitura de Valença-Ba ',
       icon: valenca,
       iconBg: '#E6DEDD',
       date: t('work_valenca_date'),
