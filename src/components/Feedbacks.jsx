@@ -1,13 +1,15 @@
 /* eslint-disable react-refresh/only-export-components */
 import { motion } from 'framer-motion';
 import PropTypes from 'prop-types';
-
 import { styles } from '../styles';
 import { SectionWrapper } from '../hoc';
 import { fadeIn, textVariant } from '../utils/motion';
-import { testimonials, feedback } from '../constants';
+
+import { useLanguage } from '../context/LanguageContext';
+import { manoel, victor, addson } from '../assets';
 
 const FeedbackCard = ({ index, testimonial, name, designation, company, image }) => {
+  const { t } = useLanguage();
   return (
     <motion.div
       variants={fadeIn('', 'spring', index * 0.5, 0.75)}
@@ -24,7 +26,7 @@ const FeedbackCard = ({ index, testimonial, name, designation, company, image })
               <span className="blue-text-gradient">@</span> {name}
             </p>
             <p className="mt-1 text-[12px] text-secondary">
-              {designation} {feedback.noun} {company}
+              {designation} {t('feedback_noun')} {company}
             </p>
           </div>
 
@@ -49,12 +51,36 @@ FeedbackCard.propTypes = {
 };
 
 const Feedbacks = () => {
+  const { t } = useLanguage();
+  const testimonials = [
+    {
+      testimonial: t('testimonials_manoel_testimonial'),
+      name: t('testimonials_manoel_name'),
+      designation: t('testimonials_manoel_designation'),
+      company: t('testimonials_manoel_company'),
+      image: manoel,
+    },
+    {
+      testimonial: t('testimonials_addson_testimonial'),
+      name: t('testimonials_addson_name'),
+      designation: t('testimonials_addson_designation'),
+      company: t('testimonials_addson_company'),
+      image: addson,
+    },
+    {
+      testimonial: t('testimonials_victor_testimonial'),
+      name: t('testimonials_victor_name'),
+      designation: t('testimonials_victor_designation'),
+      company: t('testimonials_victor_company'),
+      image: victor,
+    },
+  ];
   return (
     <div className={`mt-12 rounded-[20px] bg-[#D5B397]`}>
       <div className={`rounded-2xl bg-[#D0CAE3] ${styles.padding} min-h-[300px]`}>
         <motion.div variants={textVariant()}>
-          <p className={styles.sectionSubText}>{feedback.text}</p>
-          <h2 className={styles.sectionHeadText}>{feedback.title}</h2>
+          <p className={styles.sectionSubText}>{t('feedback_text')}</p>
+          <h2 className={styles.sectionHeadText}>{t('feedback_title')}</h2>
         </motion.div>
       </div>
       <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>

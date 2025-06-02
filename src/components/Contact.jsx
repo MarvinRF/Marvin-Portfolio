@@ -7,6 +7,7 @@ import { styles } from '../styles';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 import R2D2Canvas from './canvas/R2D2';
+import { useLanguage } from '../context/LanguageContext';
 
 const Contact = () => {
   const formRef = useRef();
@@ -15,7 +16,7 @@ const Contact = () => {
     email: '',
     message: '',
   });
-
+  const { t } = useLanguage();
   const [loading, setLoading] = useState(false);
 
   const handleChange = e => {
@@ -73,40 +74,40 @@ const Contact = () => {
         variants={slideIn('left', 'tween', 0.2, 1)}
         className="flex-[0.75] rounded-2xl bg-[#D5B397] p-8"
       >
-        <p className={styles.sectionSubText}>{contact.text}</p>
-        <h3 className={styles.sectionHeadText}>{contact.title}</h3>
+        <p className={styles.sectionSubText}>{t('contact_text')}</p>
+        <h3 className={styles.sectionHeadText}>{t('contact_title')}</h3>
 
         <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col gap-8">
           <label className="flex flex-col">
-            <span className="mb-4 font-medium text-white">{contact.camp_name}</span>
+            <span className="mb-4 font-medium text-white">{t('contact_camp_name')}</span>
             <input
               type="text"
               name="name"
               value={form.name}
               onChange={handleChange}
-              placeholder={contact.camp_name_placeholder}
+              placeholder={t('contact_camp_name_placeholder')}
               className="rounded-lg border-none bg-[#F0D1B8] px-6 py-4 font-medium text-white outline-none placeholder:text-secondary"
             />
           </label>
           <label className="flex flex-col">
-            <span className="mb-4 font-medium text-white">{contact.camp_email}</span>
+            <span className="mb-4 font-medium text-white">{t('contact_camp_email')}</span>
             <input
               type="email"
               name="email"
               value={form.email}
               onChange={handleChange}
-              placeholder={contact.camp_email_placeholder}
+              placeholder={t('contact_camp_email_placeholder')}
               className="rounded-lg border-none bg-[#F0D1B8] px-6 py-4 font-medium text-white outline-none placeholder:text-secondary"
             />
           </label>
           <label className="flex flex-col">
-            <span className="mb-4 font-medium text-white">{contact.camp_message}</span>
+            <span className="mb-4 font-medium text-white">{t('contact_camp_message')}</span>
             <textarea
               rows={7}
               name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder={contact.camp_message_placeholder}
+              placeholder={t('contact_camp_message_placeholder')}
               className="rounded-lg border-none bg-[#F0D1B8] px-6 py-4 font-medium text-white outline-none placeholder:text-secondary"
             />
           </label>
@@ -115,7 +116,7 @@ const Contact = () => {
             type="submit"
             className="w-fit rounded-xl bg-[#F0D1B8] px-8 py-3 font-bold text-white shadow-md shadow-primary outline-none"
           >
-            {loading ? `${contact.button_sending}` : `${contact.button_send}`}
+            {loading ? t('contact_button_sending') : t('contact_button_send')}
           </button>
         </form>
       </motion.div>

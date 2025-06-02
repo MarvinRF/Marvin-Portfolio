@@ -19,7 +19,12 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 100);
+      const scrollTop = window.scrollY;
+      if (scrollTop > 100) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -27,13 +32,9 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`
-        ${styles.paddingX} fixed top-0 z-30 flex w-full items-center py-5
-        ${scrolled ? 'bg-primary shadow-lg' : 'bg-transparent'}
-      `}
-      // IMPORTANT: evitar overflow hidden que pode cortar dropdowns
-      // e usar position relative para controlar filhos posicionados
-      style={{ position: 'relative' }}
+      className={`${styles.paddingX} fixed top-0 z-20 flex w-full items-center py-5 ${
+        scrolled ? 'bg-primary' : 'bg-transparent'
+      }`}
     >
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
         <Link

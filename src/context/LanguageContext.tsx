@@ -148,6 +148,107 @@ const translations = {
       'Driving system enhancements and process improvements through continuous feedback and collaboration with the development team.',
     ],
   },
+
+  //personal Projects section
+
+  works_section_subtext: {
+    pt: 'Meu trabalho',
+    en: 'My work',
+  },
+  works_section_title: {
+    pt: 'Projetos.',
+    en: 'Projects.',
+  },
+  works_section_description: {
+    pt: 'Como profissional, estou sempre em busca de desafios empolgantes que me permitam crescer profissionalmente e contribuir positivamente para a equipe. Aqui estão alguns dos meus projetos mais recentes.',
+    en: 'As a professional, I am always seeking exciting challenges that allow me to grow professionally and positively contribute to the team. Here are some of my latest projects.',
+  },
+
+  // Projects - names
+  projects_codeforge_name: { pt: 'CodeForge Academy', en: 'CodeForge Academy' },
+  projects_codeforge_description: {
+    pt: 'Uma plataforma de estudos moderna e interativa criada do zero para minha universidade IFBA. Construída com Next.js 15, TypeScript, Tailwind CSS, Express, Prisma, Redis, Postgres, Datadog e Socket.IO. Possui server components, autenticação moderna e um design de UI/UX bonito.',
+    en: 'A modern and interactive study platform made from scratch for my university IFBA. Built with Next.js 15, TypeScript, Tailwind CSS, Express, Prisma, Redis, Postgres, Datadog, and Socket.IO. Features server components, modern authentication, and a beautiful UI/UX design.',
+  },
+
+  projects_efood_name: { pt: 'E Food', en: 'E Food' },
+  projects_efood_description: {
+    pt: 'E-Food é uma plataforma de e-commerce para entrega de restaurantes. A página exibe seis restaurantes, cada um com seu próprio cardápio, todos importados do back-end. O front-end se atualiza dinamicamente com novos restaurantes com base nos dados do back-end.',
+    en: 'E-Food is an e-commerce platform for restaurant delivery. The page features six restaurants, each with its own menu, all imported from the back end. The front end dynamically updates with new restaurants based on backend data.',
+  },
+
+  projects_eplay_name: { pt: 'E Play Store', en: 'E Play Store' },
+  projects_eplay_description: {
+    pt: 'E-Play é uma plataforma de e-commerce de jogos digitais. Apresenta uma variedade de jogos e categorias com páginas de detalhes dinâmicas, todos importados do back-end. A plataforma se atualiza automaticamente quando novos jogos são adicionados.',
+    en: 'E-Play is a digital game e-commerce platform. It features a variety of games and categories with dynamic detail pages, all imported from the backend. It updates automatically when new games are added.',
+  },
+
+  projects_iphone15_name: { pt: 'iPhone 15 Pro Website', en: 'iPhone 15 Pro Website' },
+  projects_iphone15_description: {
+    pt: 'Reconstrução do site do iPhone 15 Pro da Apple com uma combinação fluida de animações GSAP e efeitos 3D usando Three.js. Inclui animações personalizadas, modelos 3D interativos e narrativa visual dinâmica.',
+    en: 'Recreating the Apple iPhone 15 Pro website with a seamless blend of GSAP animations and Three.js 3D effects. Includes custom animations, interactive 3D models, and visual storytelling.',
+  },
+
+  //feedback section
+  feedback_text: {
+    pt: 'O que outros têm a dizer',
+    en: 'What others have to say',
+  },
+  feedback_title: {
+    pt: 'Depoimentos.',
+    en: 'Feedback.',
+  },
+  feedback_noun: {
+    pt: 'em',
+    en: 'in',
+  },
+  // Testimonials
+  testimonials_manoel_testimonial: {
+    pt: 'Com a colaboração crucial de Marvin, a implementação do sistema educacional se tornou um empreendimento de sucesso.',
+    en: "With Marvin's crucial collaboration, the implementation of the education system became a successful endeavor.",
+  },
+  testimonials_manoel_name: { pt: 'Manoel Soares', en: 'Manoel Soares' },
+  testimonials_manoel_designation: { pt: 'Diretor de Tecnologia', en: 'Technology Director' },
+  testimonials_manoel_company: {
+    pt: 'Prefeitura Municipal de Valença.',
+    en: 'Prefeitura Municipal de Valença.',
+  },
+
+  testimonials_addson_testimonial: {
+    pt: 'Marvin brilha nas aulas de web! Muito dedicado e habilidoso, extremamente competitivo. Sempre com grandes entregas!',
+    en: 'Marvin shines in web classes! Very dedicated and skilled, extremely competitive. Always with great deliveries!',
+  },
+  testimonials_addson_name: { pt: 'Addson Araujo', en: 'Addson Araujo' },
+  testimonials_addson_designation: { pt: 'Professor', en: 'Professor' },
+  testimonials_addson_company: { pt: 'IFBA', en: 'IFBA' },
+
+  testimonials_victor_testimonial: {
+    pt: 'Seu trabalho inovador e dedicação são incomparáveis. Ele atuou em vários projetos como desenvolvedor front-end.',
+    en: 'His innovative work and dedication are unmatched, he has worked on various projects as a front-end developer.',
+  },
+  testimonials_victor_name: { pt: 'Victor Calazans', en: 'Victor Calazans' },
+  testimonials_victor_designation: { pt: 'CEO', en: 'CEO' },
+  testimonials_victor_company: { pt: 'Innovats', en: 'Innovats' },
+
+  //Contact Section
+  contact_text: { pt: 'Entre em Contato', en: 'Get in Touch' },
+  contact_title: { pt: 'Contato.', en: 'Contact.' },
+  contact_camp_name: { pt: 'Seu Nome', en: 'Your Name' },
+  contact_camp_name_placeholder: { pt: 'Qual o seu nome?', en: 'What is your name?' },
+  contact_camp_email: { pt: 'Seu Email', en: 'Your Email' },
+  contact_camp_email_placeholder: { pt: 'Digite seu Email', en: 'Enter your Email' },
+  contact_camp_message: { pt: 'Sua Mensagem', en: 'Your Message' },
+  contact_camp_message_placeholder: {
+    pt: 'O que você quer dizer?',
+    en: 'What do you want to say?',
+  },
+  contact_button_sending: { pt: 'Enviando...', en: 'Sending...' },
+  contact_button_send: { pt: 'Enviar', en: 'Send' },
+  contact_alert: {
+    pt: 'Obrigado, entrarei em contato o mais rápido possível!',
+    en: 'Thank you, I will get in touch with you as soon as possible!',
+  },
+  contact_alert_error: { pt: 'Algo deu errado!', en: 'Something went wrong!' },
 };
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
