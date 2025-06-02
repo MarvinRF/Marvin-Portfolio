@@ -66,7 +66,7 @@ const Experience = () => {
       company_name: 'WRM Tecnologia',
       icon: wrm,
       iconBg: '#E6DEDD',
-      date: 'Aug 2024 - Present',
+      date: t('work_wrmt_date'),
       points: t('work_wrmt_points'),
     },
     {
@@ -74,7 +74,7 @@ const Experience = () => {
       company_name: 'Senai (Part-time Contract afternoons)',
       icon: senai,
       iconBg: '#383E56',
-      date: 'Abr 2024 - Aug 2024',
+      date: t('work_senai_date'),
       points: t('work_senai_points'),
     },
     {
@@ -82,7 +82,7 @@ const Experience = () => {
       company_name: 'TELUS International',
       icon: telus,
       iconBg: '#E6DEDD',
-      date: 'Abr 2024 - Aug 2024',
+      date: t('work_telus_mod_date'),
       points: t('work_telus_moderator_points'),
     },
     {
@@ -90,7 +90,7 @@ const Experience = () => {
       company_name: 'Innovats',
       icon: innovats,
       iconBg: '#383E56',
-      date: 'Jul 2023 - Jul 2024',
+      date: t('work_innovats_date'),
       points: t('work_innovats_points'),
     },
     {
@@ -98,7 +98,7 @@ const Experience = () => {
       company_name: 'TELUS International',
       icon: telus,
       iconBg: '#E6DEDD',
-      date: 'Mar 2023 - Apr 2024',
+      date: t('work_telus_date'),
       points: t('work_telus_analyst_points'),
     },
     {
@@ -106,7 +106,7 @@ const Experience = () => {
       company_name: 'Colégio Estadual Gentil Paraíso Martins (Night)',
       icon: bahia,
       iconBg: '#383E56',
-      date: 'Oct 2022 - Apr 2024',
+      date: t('work_bahia_date'),
       points: t('work_bahia_points'),
     },
     {
@@ -114,7 +114,7 @@ const Experience = () => {
       company_name: 'Prefeitura de Valença-Ba (Part-time contract morning)',
       icon: valenca,
       iconBg: '#E6DEDD',
-      date: 'May 2022 - Jan 2025',
+      date: t('work_valenca_date'),
       points: t('work_valenca_points'),
     },
   ];

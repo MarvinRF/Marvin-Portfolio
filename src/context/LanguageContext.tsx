@@ -44,6 +44,7 @@ const translations = {
   work_section_subtext: { pt: 'O que eu já fiz', en: "What I've done" },
 
   work_wrmt_title: { pt: 'Desenvolvedor Front-End', en: 'Front end Developer' },
+  work_wrmt_date: { pt: 'Ago 2024 - Presente', en: 'Aug 2024 - Present' },
   work_wrmt_points: {
     pt: [
       'Fintech com sede em Brasília.',
@@ -58,6 +59,7 @@ const translations = {
   },
 
   work_senai_title: { pt: 'Professor de Web Design', en: 'Web Design Teacher' },
+  work_senai_date: { pt: 'Abr 2024 - Ago 2024', en: 'Abr 2024 - Aug 2024' },
   work_senai_points: {
     pt: [
       'Foco nos fundamentos: JS, Git, Bootstrap, CSS, Gulp, SASS e HTML.',
@@ -72,6 +74,7 @@ const translations = {
   },
 
   work_telus_moderator_title: { pt: 'Moderador', en: 'Moderator' },
+  work_telus_mod_date: { pt: 'Abr 2024 - Ago 2024', en: 'Abr 2024 - Aug 2024' },
   work_telus_moderator_points: {
     pt: [
       'Recepção e orientação de participantes em sessões controladas.',
@@ -88,6 +91,7 @@ const translations = {
   },
 
   work_innovats_title: { pt: 'Desenvolvedor React', en: 'React Developer' },
+  work_innovats_date: { pt: 'Jul 2023 - Jul 2024', en: 'Jul 2023 - Jul 2024' },
   work_innovats_points: {
     pt: [
       'Desenvolvimento e manutenção de aplicações web usando React e tecnologias relacionadas.',
@@ -104,6 +108,7 @@ const translations = {
   },
 
   work_telus_analyst_title: { pt: 'Analista de Dados', en: 'Data Analyst' },
+  work_telus_date: { pt: 'Mar 2023 - Abr 2024', en: 'Mar 2023 - Apr 2024' },
   work_telus_analyst_points: {
     pt: [
       'Avaliador de buscas, avaliando a precisão das pesquisas.',
@@ -118,6 +123,7 @@ const translations = {
   },
 
   work_bahia_title: { pt: 'Professor Residente', en: 'Resident Teacher' },
+  work_bahia_date: { pt: 'Out 2022 - Abr 2024', en: 'Oct 2022 - Apr 2024' },
   work_bahia_points: {
     pt: [
       'Professor de programação básica em Java.',
@@ -132,6 +138,7 @@ const translations = {
   },
 
   work_valenca_title: { pt: 'Coordenador de TI', en: 'IT Coordinator' },
+  work_valenca_date: { pt: 'Mai 2022 - Jan 2025', en: 'May 2022 - Jan 2025' },
   work_valenca_points: {
     pt: [
       'Liderança na transformação digital da educação em Valença-BA.',
