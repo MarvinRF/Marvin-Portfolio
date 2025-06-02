@@ -35,7 +35,7 @@ const Hero = () => {
             <span className="text-[#F0D1B8]">{heroContent.span}</span>
           </h1>
           <p className={`${styles.heroSubText} text-swadow-lg mt-2 text-white-100`}>
-            {heroContent.text} <br className="hidden sm:block" />
+            {heroContent.text1} <br className="hidden sm:block" />
             <span className="hidden sm:block">{heroContent.text2}</span>
           </p>
         </div>
