@@ -41,7 +41,7 @@ const Bb8 = ({ isMobile }) => {
       <primitive
         object={scene}
         scale={isMobile ? 0.025 : 0.03}
-        position-y={isMobile ? -1.2 : -1}
+        position-y={isMobile ? -1.2 : -1.1}
         position-x={isMobile ? 0 : 0}
         rotation-y={0}
       />
