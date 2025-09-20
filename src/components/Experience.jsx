@@ -12,7 +12,7 @@ import { valenca, bahia, innovats, telus, senai, wrm } from '../assets';
 const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
-      contentStyle={{ background: '#875B43', color: '#875B43' }}
+      contentStyle={{ background: '#DF6554', color: '#DF6554' }}
       contentArrowStyle={{ borderRight: '7px solid #232631' }}
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}

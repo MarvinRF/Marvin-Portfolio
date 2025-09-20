@@ -1,11 +1,11 @@
 Model Information:
-* title:	BB8 (Animated)
-* source:	https://sketchfab.com/3d-models/bb8-animated-15db7644c5b645f195f4d2dc0c5154ec
-* author:	StarWars-Universe (https://sketchfab.com/SWU)
+* title:	Mandalorian helmet
+* source:	https://sketchfab.com/3d-models/mandalorian-helmet-43a19f580f324bce946860cb2d61baa7
+* author:	Feco (https://sketchfab.com/fecoramirez)
 
 Model License:
-* license type:	CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
-* requirements:	Author must be credited. No commercial use. Modified versions must have the same license.
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
 
 If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
-This work is based on "BB8 (Animated)" (https://sketchfab.com/3d-models/bb8-animated-15db7644c5b645f195f4d2dc0c5154ec) by StarWars-Universe (https://sketchfab.com/SWU) licensed under CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
+This work is based on "Mandalorian helmet" (https://sketchfab.com/3d-models/mandalorian-helmet-43a19f580f324bce946860cb2d61baa7) by Feco (https://sketchfab.com/fecoramirez) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

@@ -26,13 +26,13 @@ const Hero = () => {
         className={`absolute inset-0 top-[120px]  mx-auto max-w-7xl ${styles.paddingX} flex flex-row items-start gap-5`}
       >
         <div className="mt-5 flex flex-col items-center justify-center">
-          <div className="h-5 w-5 rounded-full bg-[#F0D1B8]" />
+          <div className="h-5 w-5 rounded-full bg-[#121318]" />
           <div className="beige-gradient h-40 w-1 sm:h-80" />
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
             {heroContent.title}
-            <span className="text-[#F0D1B8]">{heroContent.span}</span>
+            <span className="text-[#121318]">{heroContent.span}</span>
           </h1>
           <p className={`${styles.heroSubText} text-swadow-lg mt-2 text-white-100`}>
             {heroContent.text1} <br className="hidden sm:block" />

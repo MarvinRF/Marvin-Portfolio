@@ -72,7 +72,7 @@ const Contact = () => {
     <div className={`flex flex-col-reverse gap-10 overflow-hidden xl:mt-12 xl:flex-row`}>
       <motion.div
         variants={slideIn('left', 'tween', 0.2, 1)}
-        className="flex-[0.75] rounded-2xl bg-[#D5B397] p-8"
+        className="flex-[0.75] rounded-2xl bg-[#4A4855] p-8"
       >
         <p className={styles.sectionSubText}>{t('contact_text')}</p>
         <h3 className={styles.sectionHeadText}>{t('contact_title')}</h3>
@@ -87,7 +87,7 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder={t('contact_camp_name_placeholder')}
-              className="rounded-lg border-none bg-[#F0D1B8] px-6 py-4 font-medium text-white outline-none placeholder:text-secondary"
+              className="rounded-lg border-none bg-[#121318] px-6 py-4 font-medium text-white outline-none placeholder:text-secondary"
             />
           </label>
           <label className="flex flex-col">
@@ -99,7 +99,7 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder={t('contact_camp_email_placeholder')}
-              className="rounded-lg border-none bg-[#F0D1B8] px-6 py-4 font-medium text-white outline-none placeholder:text-secondary"
+              className="rounded-lg border-none bg-[#121318] px-6 py-4 font-medium text-white outline-none placeholder:text-secondary"
             />
           </label>
           <label className="flex flex-col">
@@ -111,13 +111,13 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder={t('contact_camp_message_placeholder')}
-              className="rounded-lg border-none bg-[#F0D1B8] px-6 py-4 font-medium text-white outline-none placeholder:text-secondary"
+              className="rounded-lg border-none bg-[#121318] px-6 py-4 font-medium text-white outline-none placeholder:text-secondary"
             />
           </label>
 
           <button
             type="submit"
-            className="w-fit rounded-xl bg-[#F0D1B8] px-8 py-3 font-bold text-white shadow-md shadow-primary outline-none"
+            className="w-fit rounded-xl bg-[#121318] px-8 py-3 font-bold text-white shadow-md shadow-primary outline-none"
           >
             {loading ? t('contact_button_sending') : t('contact_button_send')}
           </button>

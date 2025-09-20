@@ -43,7 +43,7 @@ export default function LanguageSelector() {
         className="w-36 p-1 text-white"
         style={{
           width: '150px',
-          backgroundColor: '#F0D1B8',
+          backgroundColor: '#121318',
           borderRadius: '6px',
           padding: '6px',
           position: 'relative',

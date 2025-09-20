@@ -36,9 +36,9 @@
 }
 
 .beige-gradient {
-  background: #f0d1b8;
-  background: linear-gradient(-90deg, #f0d1b8 0%, rgba(240, 209, 184, 0) 100%);
-  background: -webkit-linear-gradient(-90deg, #f0d1b8 0%, rgba(240, 209, 184, 0) 100%);
+  background: #121318;
+  background: linear-gradient(-90deg, #121318 0%, rgba(240, 209, 184, 0) 100%);
+  background: -webkit-linear-gradient(-90deg, #121318 0%, rgba(240, 209, 184, 0) 100%);
 }
 
 .green-pink-gradient {

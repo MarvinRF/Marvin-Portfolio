@@ -1,11 +1,11 @@
 Model Information:
-* title:	R2-D2 (Animated)
-* source:	https://sketchfab.com/3d-models/r2-d2-animated-476fe6527305404cb0d7e1ebe9eead63
-* author:	StarWars-Universe (https://sketchfab.com/SWU)
+* title:	The Mandalorian - Star Wars 3d printable model
+* source:	https://sketchfab.com/3d-models/the-mandalorian-star-wars-3d-printable-model-7a88a0113ba54516824f3fc1aa2bd547
+* author:	Printed Obsession (https://sketchfab.com/printedobsession)
 
 Model License:
-* license type:	CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
-* requirements:	Author must be credited. No commercial use. Modified versions must have the same license.
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
 
 If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
-This work is based on "R2-D2 (Animated)" (https://sketchfab.com/3d-models/r2-d2-animated-476fe6527305404cb0d7e1ebe9eead63) by StarWars-Universe (https://sketchfab.com/SWU) licensed under CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
+This work is based on "The Mandalorian - Star Wars 3d printable model" (https://sketchfab.com/3d-models/the-mandalorian-star-wars-3d-printable-model-7a88a0113ba54516824f3fc1aa2bd547) by Printed Obsession (https://sketchfab.com/printedobsession) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

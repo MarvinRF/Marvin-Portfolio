@@ -13,7 +13,7 @@ const FeedbackCard = ({ index, testimonial, name, designation, company, image })
   return (
     <motion.div
       variants={fadeIn('', 'spring', index * 0.5, 0.75)}
-      className="w-full rounded-3xl bg-[#875B43] p-10 xs:w-[320px]"
+      className="w-full rounded-3xl bg-[#DF6554] p-10 xs:w-[320px]"
     >
       <p className="text-[48px] font-black text-white">&quot;</p>
 
@@ -76,8 +76,8 @@ const Feedbacks = () => {
     },
   ];
   return (
-    <div className={`mt-12 rounded-[20px] bg-[#D5B397]`}>
-      <div className={`rounded-2xl bg-[#D0CAE3] ${styles.padding} min-h-[300px]`}>
+    <div className={`mt-12 rounded-[20px] bg-[#4A4855]`}>
+      <div className={`rounded-2xl bg-[#674845] ${styles.padding} min-h-[300px]`}>
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>{t('feedback_text')}</p>
           <h2 className={styles.sectionHeadText}>{t('feedback_title')}</h2>

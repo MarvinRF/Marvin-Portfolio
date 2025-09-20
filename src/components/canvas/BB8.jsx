@@ -30,15 +30,19 @@ const Bb8 = ({ isMobile }) => {
 
   return (
     <mesh>
-      <hemisphereLight intensity={6} groundColor="black" />
-      <directionalLight intensity={6} position={[1, 7, 6]} castShadow />
+      <hemisphereLight intensity={20} groundColor="gray" />
+      <directionalLight
+        intensity={10} // antes 6
+        position={[5, 5, 5]}
+        castShadow
+      />
+      <spotLight intensity={1} position={[0, 5, 5]} angle={0.3} penumbra={0.5} castShadow />
       <pointLight intensity={10} position={[2, 3, 2]} distance={10} />
-      <spotLight intensity={8} position={[2, 5, 2]} angle={0.3} penumbra={0.5} castShadow />
       <primitive
         object={scene}
-        scale={isMobile ? 4 : 5}
-        position-y={isMobile ? -2.2 : -2.9}
-        position-x={isMobile ? 1.2 : 1}
+        scale={isMobile ? 0.025 : 0.03}
+        position-y={isMobile ? -1.2 : -1}
+        position-x={isMobile ? 0 : 0}
         rotation-y={0}
       />
     </mesh>
@@ -64,14 +68,14 @@ const Bb8Canvas = () => {
 
   return (
     <Canvas
-      frameloop="demand"
+      frameloop="always"
       shadows
       dpr={[1, 2]}
       camera={{
-        fov: 55,
+        fov: 50,
         near: 0.1,
-        far: 200,
-        position: [-4, 3, 6],
+        far: 100,
+        position: [0, 1, 3], // mais perto e centralizado
       }}
       gl={{ preserveDrawingBuffer: true }}
     >
