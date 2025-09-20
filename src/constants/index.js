@@ -142,7 +142,7 @@ const technologies = [
 const initial = {
   title: 'Hi, I am ',
   span: 'Marvin',
-  text: "I'm a Front-End Dev",
+  text: "I'm a FullStack Dev",
   text2: 'Specialized in creating modern and responsive websites.',
 };
 
@@ -151,7 +151,7 @@ const about = {
   title: 'Overview.',
   foto: minhafoto,
   description:
-    'I am a front-end developer specialized in React.js, passionate about creating and implementing user interfaces in a functional and visually appealing way. With solid experience in technologies like Redux, Vue, Tailwind, Bootstrap, JavaScript, Gulp, SASS, and CSS, I am constantly seeking to improve my skills to stay updated with market trends.',
+    'FullStack developer specializing in React/Next.js and NestJS, focused on building scalable, high-performance applications. Experienced with TypeScript, Zustand, Redux, Tailwind, Bootstrap, SASS, and modern UI/UX practices, delivering responsive and maintainable solutions.',
 };
 
 const works = {
@@ -189,15 +189,15 @@ const contact = {
 
 const experiences = [
   {
-    title: 'Front end Developer',
+    title: 'FullStack Developer',
     company_name: 'WRM Tecnologia',
     icon: wrm,
     iconBg: '#E6DEDD',
     date: 'Aug 2024 - Present',
     points: [
-      'Fintech based in Brasília.',
-      'Next.js developer, focus on SSR, TS, Tailwind, Zustand, JWT, Back-End for Front-End, SASS...',
-      'Implementation of reusable and responsive components, ensuring an intuitive and efficient user experience.',
+      'Fintech based in Brasília, delivering high-performance web applications.',
+      'FullStack development with Next.js (SSR/SSG), React, TypeScript, Tailwind, Zustand, and NestJS back-end.',
+      'Built reusable, responsive components and modular multi-app architecture, integrating RabbitMQ and ensuring scalability and performance.',
     ],
   },
   {

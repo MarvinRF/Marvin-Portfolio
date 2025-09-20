@@ -61,11 +61,11 @@ const About = () => {
         variants={textVariant()}
         className="relative flex flex-col items-center gap-6 lg:flex-row lg:items-start"
       >
-        <div className="flex-1">
+        <div className="flex-1 text-center lg:text-left">
           <p className={styles.sectionSubText}>{aboutContent.text}</p>
           <h2 className={styles.sectionHeadText}>{aboutContent.title}</h2>
         </div>
-        <div className="h-40 w-40 flex-shrink-0 lg:h-52 lg:w-52">
+        <div className="mx-auto h-40 w-40 flex-shrink-0 sm:h-48 sm:w-48 md:h-52 md:w-52 lg:mx-0">
           <img
             src={minhafoto}
             alt="minha_foto"
@@ -73,13 +73,15 @@ const About = () => {
           />
         </div>
       </motion.div>
+
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
-        className="mt-4 max-w-3xl text-[17px] leading-[30px] text-secondary"
+        className="mx-auto mt-4 max-w-full text-center text-[17px] leading-[30px] text-secondary sm:max-w-xl md:max-w-3xl lg:mx-0 lg:text-left"
       >
         {aboutContent.description}
       </motion.p>
-      <div className="mt-20 flex flex-wrap gap-10">
+
+      <div className="mt-20 flex flex-wrap justify-center gap-10 lg:justify-start">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

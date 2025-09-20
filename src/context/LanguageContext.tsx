@@ -22,8 +22,8 @@ const translations = {
   initial_title: { pt: 'Oi, eu sou o ', en: 'Hi, I am ' },
   initial_span: { pt: 'Marvin', en: 'Marvin' },
   initial_text: {
-    pt: 'Sou um Desenvolvedor Front-End',
-    en: "I'm a Front-End Dev",
+    pt: 'Sou um Desenvolvedor FullStack',
+    en: "I'm a FullStack Developer",
   },
   initial_text2: {
     pt: 'Especializado em criar sites modernos e responsivos.',
@@ -38,8 +38,8 @@ const translations = {
   about_text: { pt: 'Introdução', en: 'Introduction' },
   about_title: { pt: 'Visão geral.', en: 'Overview.' },
   about_description: {
-    pt: 'Sou um desenvolvedor front-end especializado em React.js, apaixonado por criar e implementar interfaces de usuário de forma funcional e visualmente atraente. Com sólida experiência em tecnologias como Redux, Vue, Tailwind, Bootstrap, JavaScript, Gulp, SASS e CSS, busco constantemente aprimorar minhas habilidades para me manter atualizado com as tendências do mercado.',
-    en: 'I am a front-end developer specialized in React.js, passionate about creating and implementing user interfaces in a functional and visually appealing way. With solid experience in technologies like Redux, Vue, Tailwind, Bootstrap, JavaScript, Gulp, SASS, and CSS, I am constantly seeking to improve my skills to stay updated with market trends.',
+    pt: 'Sou um desenvolvedor FullStack especializado em React/Next.js e NestJS, focado em criar aplicações escaláveis e de alto desempenho. Experiência com TypeScript, Redux, Zustand, Tailwind, Bootstrap, SASS e boas práticas de UI/UX, entregando soluções responsivas e manuteníveis.',
+    en: 'I am a FullStack developer specializing in React/Next.js and NestJS, focused on building scalable, high-performance applications. Experienced with TypeScript, Redux, Zustand, Tailwind, Bootstrap, SASS, and modern UI/UX practices, delivering responsive and maintainable solutions.',
   },
 
   // work_experience
@@ -47,18 +47,18 @@ const translations = {
   work_section_title: { pt: 'Experiência', en: 'Experience' },
   work_section_subtext: { pt: 'O que eu já fiz', en: "What I've done" },
 
-  work_wrmt_title: { pt: 'Desenvolvedor Front-End', en: 'Front end Developer' },
+  work_wrmt_title: { pt: 'Desenvolvedor FullStack', en: 'FullStack Developer' },
   work_wrmt_date: { pt: 'Ago 2024 - Presente', en: 'Aug 2024 - Present' },
   work_wrmt_points: {
     pt: [
-      'Fintech com sede em Brasília.',
-      'Desenvolvimento com Next.js, foco em SSR, TS, Tailwind, Zustand, JWT, BFF, SASS...',
-      'Implementação de componentes reutilizáveis e responsivos, garantindo uma experiência intuitiva e eficiente.',
+      'Fintech em Brasília focada em aplicações escaláveis.',
+      'Desenvolvimento FullStack com Next.js, React, TypeScript, Tailwind, Zustand e NestJS.',
+      'Criação de componentes reutilizáveis, arquitetura modular multi-app e integração com RabbitMQ.',
     ],
     en: [
-      'Fintech based in Brasília.',
-      'Next.js developer, focus on SSR, TS, Tailwind, Zustand, JWT, Back-End for Front-End, SASS...',
-      'Implementation of reusable and responsive components, ensuring an intuitive and efficient user experience.',
+      'Fintech in Brasília focused on scalable applications.',
+      'FullStack development with Next.js, React, TypeScript, Tailwind, Zustand, and NestJS.',
+      'Built reusable components, modular multi-app architecture, and integrated RabbitMQ for scalable solutions.',
     ],
   },
 
@@ -141,22 +141,23 @@ const translations = {
     ],
   },
 
-  work_valenca_title: { pt: 'Coordenador de TI', en: 'IT Coordinator' },
-  work_valenca_date: { pt: 'Mai 2022 - Jan 2025', en: 'May 2022 - Jan 2025' },
+  work_valenca_title: {
+    pt: 'Proxy Product Owner · Soluções EdTech',
+    en: 'Proxy Product Owner · EdTech Solutions',
+  },
+  work_valenca_date: { pt: 'Mai 2022 - Ago 2024', en: 'May 2022 - Aug 2024' },
   work_valenca_points: {
     pt: [
-      'Liderança na transformação digital da educação em Valença-BA.',
-      'Intermediação entre usuários e equipe de desenvolvimento.',
-      'Atendimento a demandas e suporte técnico.',
-      'Criação de documentação para onboarding de novos colaboradores.',
-      'Melhoria contínua dos sistemas e processos da rede municipal.',
+      'Liderança na transformação digital do sistema educacional de 137 escolas.',
+      'Ponte entre usuários e equipe de desenvolvimento, convertendo demandas em requisitos técnicos claros.',
+      'Gerenciamento completo de tickets, priorizando soluções definitivas.',
+      'Criação de documentação para onboarding e treinamento de professores e coordenadores.',
     ],
     en: [
-      'Leading the digital transformation of the educational system in Valença-BA, managing IT services for 137 schools.',
-      'Serving as the primary liaison between users and the development team, effectively translating client needs into actionable development tasks.',
-      'Responding to and resolving internal and external user queries and requests.',
-      'Developing comprehensive documentation to aid in the training and onboarding of new staff (including directors, secretaries, coordinators, and teachers).',
-      'Driving system enhancements and process improvements through continuous feedback and collaboration with the development team.',
+      'Led the digital transformation of 137 schools’ educational system.',
+      'Served as liaison between users and development team, translating needs into clear technical requirements.',
+      'Managed full ticket lifecycle, prioritizing permanent solutions.',
+      'Developed documentation for onboarding and training of teachers and coordinators.',
     ],
   },
 
